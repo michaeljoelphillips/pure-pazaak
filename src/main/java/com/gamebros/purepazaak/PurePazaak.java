@@ -1,5 +1,8 @@
 package com.gamebros.purepazaak;
 
+import com.gamebros.purepazaak.view.InventoryView;
+import com.gamebros.purepazaak.entity.Inventory;
+import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.ui.component.CardComponent;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.Game;
@@ -13,6 +16,12 @@ public class PurePazaak implements Game {
 
   protected CardComponent testCard2;
 
+  protected Inventory inventory;
+
+  protected InventoryView view;
+
+  protected int time;
+
   public String getTitle() {
     return "Pure Pazaak";
   }
@@ -24,20 +33,29 @@ public class PurePazaak implements Game {
   public void render(GameContainer container, Graphics graphics) throws SlickException {
     graphics.drawString("Pure Pazaak", 50, 50);
 
-    testCard.render(container, graphics);
-    testCard2.render(container, graphics);
+    view.render();
   }
 
   public void update(GameContainer container, int delta) {
-    return;
+    if (this.time >= 10) {
+      for (Card card : inventory.getCards()) {
+        card.x = card.x + 1;
+        card.y = card.y + 1;
+      }
+
+      this.time = 0;
+    }
+
+    this.time = this.time + delta;
   }
 
   public void init(GameContainer container) throws SlickException {
-    testCard = new CardComponent(container, new Image("textures/card.png"));
-    testCard.setLocation(300, 300);
+    inventory = new Inventory();
 
-    testCard2 = new CardComponent(container, new Image("textures/card.png"));
-    testCard2.setLocation(200, 300);
+    inventory.addCard(new Card(4, 20, 25));
+    inventory.addCard(new Card(4, 220, 25));
+
+    view = new InventoryView(container.getGraphics(), inventory);
 
     return;
   }
