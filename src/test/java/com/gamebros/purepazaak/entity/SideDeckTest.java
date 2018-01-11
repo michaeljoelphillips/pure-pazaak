@@ -65,7 +65,7 @@ public class SideDeckTest {
       deck.addCard(new Card(i));
     }
 
-    ArrayList<Card> playableDeck = deck.getRandomCards();
+    ArrayList<Card> playableDeck = deck.drawRandomCards();
 
     assertEquals(4, playableDeck.size());
   }

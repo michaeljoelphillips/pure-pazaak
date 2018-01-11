@@ -1,17 +1,27 @@
 package com.gamebros.purepazaak;
 
-import com.gamebros.purepazaak.ui.component.CardComponent;
+import java.util.ArrayList;
+
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.Game;
-import org.newdawn.slick.Image;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
-public class PurePazaak implements Game {
-  protected CardComponent testCard;
+import com.gamebros.purepazaak.controller.InventoryController;
+import com.gamebros.purepazaak.controller.MatchController;
+import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.Inventory;
+import com.gamebros.purepazaak.entity.Player;
+import com.gamebros.purepazaak.entity.SideDeck;
+import com.gamebros.purepazaak.factory.SideDeckFactory;
+import com.gamebros.purepazaak.view.InventoryView;
 
-  protected CardComponent testCard2;
+public class PurePazaak implements Game {
+  protected MatchController controller;
+
+  protected int time = 0;
 
   public String getTitle() {
     return "Pure Pazaak";
@@ -22,22 +32,30 @@ public class PurePazaak implements Game {
   }
 
   public void render(GameContainer container, Graphics graphics) throws SlickException {
-    graphics.drawString("Pure Pazaak", 50, 50);
-
-    testCard.render(container, graphics);
-    testCard2.render(container, graphics);
+    this.controller.render(graphics);
   }
 
   public void update(GameContainer container, int delta) {
-    return;
+    this.time += delta;
+
+    if (this.time >= 1000) {
+      this.controller.update();
+
+      this.time = 0;
+    }
   }
 
   public void init(GameContainer container) throws SlickException {
-    testCard = new CardComponent(container, new Image("textures/card.png"));
-    testCard.setLocation(300, 300);
+    SideDeckFactory factory = new SideDeckFactory();
 
-    testCard2 = new CardComponent(container, new Image("textures/card.png"));
-    testCard2.setLocation(200, 300);
+    Player playerOne = new Player(factory.build());
+    Player playerTwo = new Player(factory.build());
+
+    Match match = new Match(playerOne, playerTwo);
+
+    this.controller = new MatchController(match);
+
+    container.getInput().addMouseListener(controller);
 
     return;
   }

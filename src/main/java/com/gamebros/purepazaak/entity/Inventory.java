@@ -9,6 +9,10 @@ public class Inventory {
     cards = new ArrayList<Card>();
   }
 
+  public Inventory(ArrayList<Card> cards) {
+    this.cards = cards;
+  }
+
   public ArrayList<Card> getCards() {
     return cards;
   }

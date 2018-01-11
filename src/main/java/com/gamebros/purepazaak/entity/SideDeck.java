@@ -16,7 +16,7 @@ public class SideDeck {
     this.setCards(cards);
   }
 
-  public ArrayList<Card> getRandomCards() {
+  public ArrayList<Card> drawRandomCards() {
     ArrayList<Card> result = new ArrayList<Card>(4);
     ArrayList<Card> clone = new ArrayList<Card>(this.cards);
 
