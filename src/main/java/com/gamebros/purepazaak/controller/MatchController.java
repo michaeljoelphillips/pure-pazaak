@@ -8,6 +8,7 @@ import com.gamebros.purepazaak.Match;
 import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.enumerable.WinnerEnum;
+import com.gamebros.purepazaak.view.ButtonView;
 import com.gamebros.purepazaak.view.DeckView;
 import com.gamebros.purepazaak.view.MatchView;
 
@@ -19,6 +20,10 @@ public class MatchController extends AbstractController {
   protected DeckView playerOneDeckView;
 
   protected DeckView playerTwoDeckView;
+
+  protected ButtonView endTurnButton;
+
+  protected ButtonView standButton;
 
   public MatchController(Match match) {
     this.match = match;
@@ -44,6 +49,8 @@ public class MatchController extends AbstractController {
       this.matchView.render(graphics);
       this.playerOneDeckView.render(graphics);
       this.playerTwoDeckView.render(graphics);
+      this.endTurnButton.render(graphics);
+      this.standButton.render(graphics);
     } catch (Exception e) {
       return;
     }
@@ -59,6 +66,14 @@ public class MatchController extends AbstractController {
         .addCard(clickedCard.get());
 
       this.match.getPlayerDeck(PlayerEnum.PLAYERONE).remove(clickedCard.get());
+    }
+
+    if (this.endTurnButton.isClicked(x, y)) {
+      this.match.getCurrentSet().endTurn();
+    }
+
+    if (this.standButton.isClicked(x, y)) {
+      this.match.getCurrentSet().stand();
     }
   }
 
@@ -80,5 +95,9 @@ public class MatchController extends AbstractController {
         380,
         100
     );
+
+
+    this.endTurnButton = new ButtonView("End Turn", 100, 410);
+    this.standButton = new ButtonView("Stand", 210, 410);
   }
 }

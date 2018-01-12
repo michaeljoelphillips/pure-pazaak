@@ -16,16 +16,16 @@ public class MatchView {
 
   protected CardGrid playerOneBoard = new CardGrid(
       20,
-      10,
+      60,
       380,
-      200
+      330
   );
 
   protected CardGrid playerTwoBoard = new CardGrid(
       400,
-      10,
+      60,
       380,
-      200
+      330
   );
 
   public MatchView(Match match) {
@@ -40,5 +40,27 @@ public class MatchView {
 
     playerOneBoard.render(graphics);
     playerTwoBoard.render(graphics);
+
+    graphics.drawString(
+        String.valueOf(
+          this.match
+            .getCurrentSet()
+            .getBoard(PlayerEnum.PLAYERONE)
+            .getTotal()
+        ),
+        180,
+        20
+    );
+
+    graphics.drawString(
+        String.valueOf(
+          this.match
+            .getCurrentSet()
+            .getBoard(PlayerEnum.PLAYERTWO)
+            .getTotal()
+        ),
+        580,
+        20
+    );
   }
 }
