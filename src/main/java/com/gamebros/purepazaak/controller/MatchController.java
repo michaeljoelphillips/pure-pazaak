@@ -17,8 +17,6 @@ public class MatchController extends AbstractController {
 
   protected MatchView matchView;
 
-  protected DeckView playerOneDeckView;
-
   protected DeckView playerTwoDeckView;
 
   protected ButtonView endTurnButton;
@@ -47,7 +45,6 @@ public class MatchController extends AbstractController {
   public void render(Graphics graphics) {
     try {
       this.matchView.render(graphics);
-      this.playerOneDeckView.render(graphics);
       this.playerTwoDeckView.render(graphics);
       this.endTurnButton.render(graphics);
       this.standButton.render(graphics);
@@ -57,17 +54,6 @@ public class MatchController extends AbstractController {
   }
 
   public void mouseReleased(int button, int x, int y) {
-    Optional<Card> clickedCard = this.playerOneDeckView.getClickedCard(x, y);
-
-    if (clickedCard.isPresent()) {
-      this.match
-        .getCurrentSet()
-        .getBoard(PlayerEnum.PLAYERONE)
-        .addCard(clickedCard.get());
-
-      this.match.getPlayerDeck(PlayerEnum.PLAYERONE).remove(clickedCard.get());
-    }
-
     if (this.endTurnButton.isClicked(x, y)) {
       this.match.getCurrentSet().endTurn();
     }
@@ -80,14 +66,6 @@ public class MatchController extends AbstractController {
   private void init() {
     this.matchView = new MatchView(this.match);
 
-    this.playerOneDeckView = new DeckView(
-        this.match.getPlayerDeck(PlayerEnum.PLAYERONE),
-        20,
-        480,
-        380,
-        100
-    );
-
     this.playerTwoDeckView = new DeckView(
         this.match.getPlayerDeck(PlayerEnum.PLAYERTWO),
         400,
@@ -95,7 +73,6 @@ public class MatchController extends AbstractController {
         380,
         100
     );
-
 
     this.endTurnButton = new ButtonView("End Turn", 100, 410);
     this.standButton = new ButtonView("Stand", 210, 410);

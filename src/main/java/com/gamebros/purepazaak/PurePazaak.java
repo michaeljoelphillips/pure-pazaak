@@ -9,17 +9,21 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
+import com.gamebros.purepazaak.controller.DeckController;
 import com.gamebros.purepazaak.controller.InventoryController;
 import com.gamebros.purepazaak.controller.MatchController;
 import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.entity.Inventory;
 import com.gamebros.purepazaak.entity.Player;
 import com.gamebros.purepazaak.entity.SideDeck;
+import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.factory.SideDeckFactory;
 import com.gamebros.purepazaak.view.InventoryView;
 
 public class PurePazaak implements Game {
-  protected MatchController controller;
+  protected MatchController matchController;
+
+  protected DeckController deckController;
 
   protected int time = 0;
 
@@ -32,14 +36,15 @@ public class PurePazaak implements Game {
   }
 
   public void render(GameContainer container, Graphics graphics) throws SlickException {
-    this.controller.render(graphics);
+    this.matchController.render(graphics);
+    this.deckController.render(graphics);
   }
 
   public void update(GameContainer container, int delta) {
     this.time += delta;
 
     if (this.time >= 1000) {
-      this.controller.update();
+      this.matchController.update();
 
       this.time = 0;
     }
@@ -53,9 +58,14 @@ public class PurePazaak implements Game {
 
     Match match = new Match(playerOne, playerTwo);
 
-    this.controller = new MatchController(match);
+    this.matchController = new MatchController(match);
+    this.deckController = new DeckController(
+        container,
+        match.getPlayerDeck(PlayerEnum.PLAYERONE),
+        match
+    );
 
-    container.getInput().addMouseListener(controller);
+    container.getInput().addMouseListener(this.matchController);
 
     return;
   }
