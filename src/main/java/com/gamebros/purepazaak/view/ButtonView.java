@@ -5,10 +5,13 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.ShapeFill;
 import org.newdawn.slick.geom.Rectangle;
 
+import com.gamebros.purepazaak.event.ButtonClickedEvent;
+import com.gamebros.purepazaak.view.AbstractView;
+
 /**
  * @FIXME: This class should not implement ShapeFill.
  */
-public class ButtonView {
+public class ButtonView extends AbstractView {
   protected static int WIDTH = 100;
 
   protected static int HEIGHT = 30;
@@ -27,6 +30,7 @@ public class ButtonView {
     this.y = y;
 
     this.button = new Rectangle(x, y, WIDTH, HEIGHT);
+    this.acceptsInput = true;
   }
 
   public void render(Graphics graphics) {
@@ -40,7 +44,11 @@ public class ButtonView {
     graphics.setColor(oldColor);
   }
 
-  public boolean isClicked(int x, int y) {
+  protected boolean isClicked(int x, int y) {
     return this.button.contains((float) x, (float) y);
+  }
+
+  public void mouseReleased(int button, int x, int y) {
+    this.notifyListeners(new ButtonClickedEvent());
   }
 }

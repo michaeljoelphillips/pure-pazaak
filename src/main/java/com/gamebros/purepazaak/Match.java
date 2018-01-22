@@ -30,11 +30,13 @@ public class Match {
     this.playerTwoDeck = playerTwo.getSideDeck().drawRandomCards();
   }
 
-  public void newSet() {
+  public MatchSet newSet() {
     MatchSet set = new MatchSet(new MainDeck());
 
     this.sets.add(set);
     this.currentSet = set;
+
+    return set;
   }
 
   public ArrayList<MatchSet> getMatchSets() {

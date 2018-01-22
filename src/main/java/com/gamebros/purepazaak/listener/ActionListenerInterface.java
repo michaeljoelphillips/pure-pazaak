@@ -1,10 +1,9 @@
 package com.gamebros.purepazaak.listener;
 
-import com.gamebros.purepazaak.event.CardClickedEvent;
-import com.gamebros.purepazaak.event.EventInterface;
+import com.gamebros.purepazaak.event.ContextualEventInterface;
 
 // @TODO: A subscriber based relationship might work really well here.
-// @FIXME: I think this might need to use generics.
 public interface ActionListenerInterface {
-  public void handle(CardClickedEvent event);
+  // @TODO: This is a very rigid contract.
+  public void handle(ContextualEventInterface event);
 }

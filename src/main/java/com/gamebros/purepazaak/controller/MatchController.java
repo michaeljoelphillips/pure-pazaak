@@ -2,31 +2,25 @@ package com.gamebros.purepazaak.controller;
 
 import java.util.Optional;
 
+import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 
 import com.gamebros.purepazaak.Match;
 import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.enumerable.WinnerEnum;
-import com.gamebros.purepazaak.view.ButtonView;
 import com.gamebros.purepazaak.view.DeckView;
-import com.gamebros.purepazaak.view.MatchView;
+import com.gamebros.purepazaak.view.MatchSetView;
 
-public class MatchController extends AbstractController {
+public class MatchController {
   protected Match match;
 
-  protected MatchView matchView;
+  protected MatchSetView matchSetView;
 
   protected DeckView playerTwoDeckView;
 
-  protected ButtonView endTurnButton;
-
-  protected ButtonView standButton;
-
   public MatchController(Match match) {
     this.match = match;
-    this.match.newSet();
-
     this.init();
   }
 
@@ -36,36 +30,29 @@ public class MatchController extends AbstractController {
     }
 
     if (this.match.getCurrentSet().getWinner() != WinnerEnum.NONE) {
-      this.match.newSet();
-
-      this.matchView = new MatchView(this.match);
+      this.startNewSet();
     }
   }
 
   public void render(Graphics graphics) {
     try {
-      this.matchView.render(graphics);
+      this.matchSetView.render(graphics);
       this.playerTwoDeckView.render(graphics);
-      this.endTurnButton.render(graphics);
-      this.standButton.render(graphics);
     } catch (Exception e) {
       return;
     }
   }
 
-  public void mouseReleased(int button, int x, int y) {
-    if (this.endTurnButton.isClicked(x, y)) {
-      this.match.getCurrentSet().endTurn();
-    }
-
-    if (this.standButton.isClicked(x, y)) {
-      this.match.getCurrentSet().stand();
-    }
+  private void init() {
+    this.startNewSet();
+    this.createPlayerTwoDeck();
   }
 
-  private void init() {
-    this.matchView = new MatchView(this.match);
+  private void startNewSet() {
+    this.matchSetView = new MatchSetView(this.match.newSet());
+  }
 
+  private void createPlayerTwoDeck() {
     this.playerTwoDeckView = new DeckView(
         this.match.getPlayerDeck(PlayerEnum.PLAYERTWO),
         400,
@@ -73,8 +60,5 @@ public class MatchController extends AbstractController {
         380,
         100
     );
-
-    this.endTurnButton = new ButtonView("End Turn", 100, 410);
-    this.standButton = new ButtonView("Stand", 210, 410);
   }
 }

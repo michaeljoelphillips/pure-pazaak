@@ -1,9 +1,11 @@
 package com.gamebros.purepazaak.event;
 
-import com.gamebros.purepazaak.entity.Card;
-import com.gamebros.purepazaak.event.EventInterface;
+import java.util.Optional;
 
-public class CardClickedEvent implements EventInterface {
+import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.event.ContextualEventInterface;
+
+public class CardClickedEvent implements ContextualEventInterface {
   protected Card clickedCard;
 
   public CardClickedEvent(Card clickedCard) {
@@ -14,7 +16,7 @@ public class CardClickedEvent implements EventInterface {
     return "card.clicked";
   }
 
-  public Card getCard() {
-    return this.clickedCard;
+  public Optional<Object> get() {
+    return Optional.of(this.clickedCard);
   }
 }

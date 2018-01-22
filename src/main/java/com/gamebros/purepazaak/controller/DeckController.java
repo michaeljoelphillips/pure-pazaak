@@ -10,7 +10,7 @@ import com.gamebros.purepazaak.Match;
 import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.event.CardClickedEvent;
-import com.gamebros.purepazaak.event.EventInterface;
+import com.gamebros.purepazaak.event.ContextualEventInterface;
 import com.gamebros.purepazaak.listener.ActionListenerInterface;
 import com.gamebros.purepazaak.view.DeckView;
 
@@ -56,12 +56,21 @@ public class DeckController extends AbstractController implements ActionListener
     this.container.getInput().addMouseListener(this.deckView);
   }
 
-  public void handle(CardClickedEvent event) {
-    this.deck.remove(event.getCard());
+  /**
+   */
+  public void handle(ContextualEventInterface event) {
+    // @TODO: Throw exceptions when bad things happen.
+    // if (!event.get().isPresent()) {
+    //   throw new Exception("Cannot handle an event without a Card Set.");
+    // }
+
+    Card clickedCard = (Card) event.get().get();
+
+    this.deck.remove(clickedCard);
 
     this.match
       .getCurrentSet()
       .getBoard(PlayerEnum.PLAYERONE)
-      .addCard(event.getCard());
+      .addCard(clickedCard);
   }
 }

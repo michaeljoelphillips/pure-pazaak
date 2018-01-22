@@ -11,8 +11,8 @@ import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.ui.CardGrid;
 
-public class MatchView {
-  protected Match match;
+public class MatchSetView {
+  protected MatchSet matchSet;
 
   protected CardGrid playerOneBoard = new CardGrid(
       20,
@@ -28,23 +28,29 @@ public class MatchView {
       330
   );
 
-  public MatchView(Match match) {
-    this.match = match;
+  public MatchSetView(MatchSet matchSet) {
+    this.matchSet = matchSet;
   }
 
   public void render(Graphics graphics) throws SlickException {
-    MatchSet set = match.getCurrentSet();
+    this.playerOneBoard.setCards(
+        this.matchSet
+          .getBoard(PlayerEnum.PLAYERONE)
+          .getCards()
+    );
 
-    this.playerOneBoard.setCards(set.getBoard(PlayerEnum.PLAYERONE).getCards());
-    this.playerTwoBoard.setCards(set.getBoard(PlayerEnum.PLAYERTWO).getCards());
+    this.playerTwoBoard.setCards(
+        this.matchSet
+          .getBoard(PlayerEnum.PLAYERTWO)
+          .getCards()
+    );
 
     playerOneBoard.render(graphics);
     playerTwoBoard.render(graphics);
 
     graphics.drawString(
         String.valueOf(
-          this.match
-            .getCurrentSet()
+          this.matchSet
             .getBoard(PlayerEnum.PLAYERONE)
             .getTotal()
         ),
@@ -54,8 +60,7 @@ public class MatchView {
 
     graphics.drawString(
         String.valueOf(
-          this.match
-            .getCurrentSet()
+          this.matchSet
             .getBoard(PlayerEnum.PLAYERTWO)
             .getTotal()
         ),

@@ -12,6 +12,7 @@ import org.newdawn.slick.SlickException;
 import com.gamebros.purepazaak.controller.DeckController;
 import com.gamebros.purepazaak.controller.InventoryController;
 import com.gamebros.purepazaak.controller.MatchController;
+import com.gamebros.purepazaak.controller.UIController;
 import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.entity.Inventory;
 import com.gamebros.purepazaak.entity.Player;
@@ -24,6 +25,8 @@ public class PurePazaak implements Game {
   protected MatchController matchController;
 
   protected DeckController deckController;
+
+  protected UIController uiController;
 
   protected int time = 0;
 
@@ -38,6 +41,7 @@ public class PurePazaak implements Game {
   public void render(GameContainer container, Graphics graphics) throws SlickException {
     this.matchController.render(graphics);
     this.deckController.render(graphics);
+    this.uiController.render(graphics);
   }
 
   public void update(GameContainer container, int delta) {
@@ -64,8 +68,7 @@ public class PurePazaak implements Game {
         match.getPlayerDeck(PlayerEnum.PLAYERONE),
         match
     );
-
-    container.getInput().addMouseListener(this.matchController);
+    this.uiController = new UIController(container, match);
 
     return;
   }

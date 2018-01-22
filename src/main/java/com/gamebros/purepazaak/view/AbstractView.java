@@ -7,7 +7,7 @@ import org.newdawn.slick.Input;
 import org.newdawn.slick.MouseListener;
 
 import com.gamebros.purepazaak.event.CardClickedEvent;
-import com.gamebros.purepazaak.event.EventInterface;
+import com.gamebros.purepazaak.event.ContextualEventInterface;
 import com.gamebros.purepazaak.listener.ActionListenerInterface;
 import com.gamebros.purepazaak.view.ClickableViewInterface;
 
@@ -20,7 +20,7 @@ public abstract class AbstractView implements MouseListener, ClickableViewInterf
     this.listeners.add(listener);
   }
 
-  protected void notifyListeners(CardClickedEvent event) {
+  protected void notifyListeners(ContextualEventInterface event) {
     this.listeners.stream().forEach(listener -> listener.handle(event));
   }
 
