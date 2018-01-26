@@ -21,7 +21,7 @@ public class CardView {
 
   protected float y;
 
-  protected boolean placed;
+  protected boolean placed = false;
 
   public CardView(Card card) throws SlickException {
     this.card = card;
@@ -39,8 +39,19 @@ public class CardView {
 
   public void render(Graphics graphics) {
     if (this.placed) {
+      String cardValue = Integer.toString(card.getValue());
+
       graphics.texture(this.rectangle, this.image, true);
+      graphics.drawString(cardValue, getStringPositionX(), getStringPositionY());
     }
+  }
+
+  private float getStringPositionX() {
+    return this.getX() + 35;
+  }
+
+  private float getStringPositionY() {
+    return this.getY() + 22;
   }
 
   public int getX() {
