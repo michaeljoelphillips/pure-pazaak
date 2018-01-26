@@ -8,9 +8,6 @@ import org.newdawn.slick.geom.Rectangle;
 import com.gamebros.purepazaak.event.ButtonClickedEvent;
 import com.gamebros.purepazaak.view.AbstractView;
 
-/**
- * @FIXME: This class should not implement ShapeFill.
- */
 public class ButtonView extends AbstractView {
   protected static int WIDTH = 100;
 
@@ -49,6 +46,8 @@ public class ButtonView extends AbstractView {
   }
 
   public void mouseReleased(int button, int x, int y) {
-    this.notifyListeners(new ButtonClickedEvent());
+    if (this.isClicked(x, y)) {
+      this.notifyListeners(new ButtonClickedEvent());
+    }
   }
 }
