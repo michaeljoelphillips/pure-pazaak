@@ -70,7 +70,7 @@ public class MatchSet {
     return this.playersStood.size() == 2;
   }
 
-  protected boolean hasStood(PlayerEnum player) {
+  public boolean hasStood(PlayerEnum player) {
     return this.playersStood.contains(player);
   }
 

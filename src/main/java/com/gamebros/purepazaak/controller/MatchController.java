@@ -25,10 +25,6 @@ public class MatchController {
   }
 
   public void update() {
-    if (this.match.getCurrentSet().getCurrentPlayer() == PlayerEnum.PLAYERTWO) {
-      this.match.getCurrentSet().endTurn();
-    }
-
     if (this.match.getCurrentSet().getWinner() != WinnerEnum.NONE) {
       this.startNewSet();
     }

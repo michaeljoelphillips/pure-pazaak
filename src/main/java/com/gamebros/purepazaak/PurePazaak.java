@@ -9,6 +9,7 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
+import com.gamebros.purepazaak.ai.SimpleAI;
 import com.gamebros.purepazaak.controller.DeckController;
 import com.gamebros.purepazaak.controller.InventoryController;
 import com.gamebros.purepazaak.controller.MatchController;
@@ -27,6 +28,8 @@ public class PurePazaak implements Game {
   protected DeckController deckController;
 
   protected UIController uiController;
+
+  protected SimpleAI ai;
 
   protected int time = 0;
 
@@ -47,11 +50,14 @@ public class PurePazaak implements Game {
   public void update(GameContainer container, int delta) {
     this.time += delta;
 
+    // Simulate time thinking.
     if (this.time >= 1000) {
-      this.matchController.update();
+      this.ai.update();
 
       this.time = 0;
     }
+
+    this.matchController.update();
   }
 
   public void init(GameContainer container) throws SlickException {
@@ -62,13 +68,15 @@ public class PurePazaak implements Game {
 
     Match match = new Match(playerOne, playerTwo);
 
+    this.uiController = new UIController(container, match);
     this.matchController = new MatchController(match);
     this.deckController = new DeckController(
         container,
         match.getPlayerDeck(PlayerEnum.PLAYERONE),
         match
     );
-    this.uiController = new UIController(container, match);
+
+    this.ai = new SimpleAI(match);
 
     return;
   }
