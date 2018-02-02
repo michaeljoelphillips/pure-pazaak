@@ -104,7 +104,7 @@ public class SimpleAI {
   }
 
   protected ArrayList<Card> getSideDeck() {
-    return this.match.getPlayerDeck(PlayerEnum.PLAYERTWO);
+    return this.match.getCurrentPlayerDeck();
   }
 
   protected void stand() {

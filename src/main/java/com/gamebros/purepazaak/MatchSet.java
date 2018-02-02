@@ -13,16 +13,19 @@ public class MatchSet {
 
   protected Board playerTwoBoard = new Board();
 
-  protected MainDeck deck;
+  protected MainDeck mainDeck;
 
   protected WinnerEnum winner = WinnerEnum.NONE;
 
-  protected PlayerEnum currentPlayer = PlayerEnum.PLAYERONE;
+  protected PlayerEnum currentPlayer;
+
+  protected PlayerEnum firstPlayer;
 
   protected HashSet<PlayerEnum> playersStood = new HashSet<PlayerEnum>();
 
-  public MatchSet(MainDeck deck) {
-    this.deck = deck;
+  public MatchSet(MainDeck mainDeck, PlayerEnum player) {
+    this.mainDeck = mainDeck;
+    this.setFirstPlayer(player);
 
     this.draw();
   }
@@ -79,7 +82,9 @@ public class MatchSet {
   }
 
   protected void draw() {
-    this.getBoard(this.currentPlayer).addCard(this.deck.draw());
+    Card card = this.mainDeck.draw();
+
+    this.getBoard(this.currentPlayer).addCard(card);
   }
 
   public void stand() {
@@ -114,5 +119,14 @@ public class MatchSet {
     }
 
     this.draw();
+  }
+
+  public PlayerEnum getFirstPlayer() {
+    return this.firstPlayer;
+  }
+
+  private void setFirstPlayer(PlayerEnum player) {
+    this.currentPlayer = player;
+    this.firstPlayer = player;
   }
 }

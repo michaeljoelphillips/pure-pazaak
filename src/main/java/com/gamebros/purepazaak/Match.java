@@ -18,7 +18,7 @@ public class Match {
 
   protected ArrayList<Card> playerTwoDeck;
 
-  protected ArrayList<MatchSet> sets = new ArrayList<MatchSet>();
+  protected ArrayList<MatchSet> matchSets = new ArrayList<MatchSet>();
 
   protected MatchSet currentSet;
 
@@ -30,17 +30,69 @@ public class Match {
     this.playerTwoDeck = playerTwo.getSideDeck().drawRandomCards();
   }
 
-  public MatchSet newSet() {
-    MatchSet set = new MatchSet(new MainDeck());
+  public MatchSet createNewSet() {
+    MainDeck newMainDeck = new MainDeck();
 
-    this.sets.add(set);
-    this.currentSet = set;
+    PlayerEnum firstPlayer = this.decideNextPlayer();
+    MatchSet newMatchSet = new MatchSet(newMainDeck, firstPlayer);
 
-    return set;
+    this.matchSets.add(newMatchSet);
+    this.currentSet = newMatchSet;
+
+    return this.currentSet;
+  }
+
+  private PlayerEnum decideNextPlayer() {
+    if (this.matchSets.size() == 0) {
+      return this.drawForFirstPlayer();
+    }
+
+    WinnerEnum winner = this.currentSet.getWinner();
+    PlayerEnum nextPlayer = null;
+
+    switch (winner) {
+      case PLAYERONE:
+        nextPlayer = PlayerEnum.PLAYERONE;
+
+        break;
+      case PLAYERTWO:
+        nextPlayer = PlayerEnum.PLAYERTWO;
+
+        break;
+      case NONE:
+        nextPlayer = this.drawForFirstPlayer();
+
+        break;
+      case TIE:
+      default:
+        nextPlayer = this.currentSet.getFirstPlayer().next();
+
+        break;
+    }
+
+    return nextPlayer;
+  }
+
+  private PlayerEnum drawForFirstPlayer() {
+    MainDeck deck = new MainDeck();
+
+    int playerOneDraw = deck.draw().getValue();
+    int playerTwoDraw = deck.draw().getValue();
+
+    if (playerOneDraw > playerTwoDraw) {
+      return PlayerEnum.PLAYERONE;
+    }
+
+    if (playerTwoDraw > playerOneDraw) {
+      return PlayerEnum.PLAYERTWO;
+    }
+
+    // If card values are tied, draw again.
+    return this.drawForFirstPlayer();
   }
 
   public ArrayList<MatchSet> getMatchSets() {
-    return this.sets;
+    return this.matchSets;
   }
 
   public MatchSet getCurrentSet() {
@@ -48,18 +100,18 @@ public class Match {
   }
 
   public Player getWinner() {
-    if (this.sets.size() < 3) {
+    if (this.matchSets.size() < 3) {
       return null;
     }
 
-    ArrayList<MatchSet> playerOne = this.sets
+    ArrayList<MatchSet> playerOne = this.matchSets
         .stream()
-        .filter(set -> set.getWinner() == WinnerEnum.PLAYERONE)
+        .filter(matchSet -> matchSet.getWinner() == WinnerEnum.PLAYERONE)
         .collect(Collectors.toCollection(ArrayList<MatchSet>::new));
 
-    ArrayList<MatchSet> playerTwo = this.sets
+    ArrayList<MatchSet> playerTwo = this.matchSets
         .stream()
-        .filter(set -> set.getWinner() == WinnerEnum.PLAYERTWO)
+        .filter(matchSet -> matchSet.getWinner() == WinnerEnum.PLAYERTWO)
         .collect(Collectors.toCollection(ArrayList<MatchSet>::new));
 
     if (playerOne.size() == 3) {
@@ -73,8 +125,19 @@ public class Match {
     return null;
   }
 
-  public ArrayList<Card> getPlayerDeck(PlayerEnum player) {
-    return player == PlayerEnum.PLAYERONE
+  public ArrayList<Card> getPlayerOneDeck() {
+    return this.playerOneDeck;
+  }
+
+  public ArrayList<Card> getPlayerTwoDeck() {
+    return this.playerTwoDeck;
+  }
+
+  public ArrayList<Card> getCurrentPlayerDeck() {
+    MatchSet currentSet = this.getCurrentSet();
+    PlayerEnum currentPlayer = currentSet.getCurrentPlayer();
+
+    return currentPlayer == PlayerEnum.PLAYERONE
       ? this.playerOneDeck
       : this.playerTwoDeck;
   }

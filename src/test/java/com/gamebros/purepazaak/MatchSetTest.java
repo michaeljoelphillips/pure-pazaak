@@ -15,7 +15,7 @@ public class MatchSetTest {
 
   @Before
   public void setUp() {
-    this.matchSet = new MatchSet(new MainDeck());
+    this.matchSet = new MatchSet(new MainDeck(), PlayerEnum.PLAYERONE);
   }
 
   @Test

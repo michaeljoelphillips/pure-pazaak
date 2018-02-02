@@ -14,46 +14,50 @@ import com.gamebros.purepazaak.event.ContextualEventInterface;
 import com.gamebros.purepazaak.listener.ActionListenerInterface;
 import com.gamebros.purepazaak.view.DeckView;
 
-public class DeckController extends AbstractController implements ActionListenerInterface {
+public class SideDeckController extends AbstractController implements ActionListenerInterface {
   protected GameContainer container;
 
-  protected ArrayList<Card> deck;
+  protected ArrayList<Card> sideDeck;
 
-  protected DeckView deckView;
+  protected DeckView sideDeckView;
 
   protected Match match;
 
-  public DeckController(
-      GameContainer container,
-      ArrayList<Card> deck,
-      Match match
-  ) {
+  public SideDeckController(GameContainer container, Match match) {
     this.container = container;
-    this.deck = deck;
     this.match = match;
+
     this.init();
   }
 
   public void render(Graphics graphics) {
     try {
-      this.deckView.render(graphics);
+      this.sideDeckView.render(graphics);
     } catch (Exception e) {
       return;
     }
   }
 
   protected void init() {
-    this.deckView = new DeckView(
-        this.deck,
+    this.sideDeck = this.match.getPlayerOneDeck();
+
+    this.createDeckView();
+    this.addInputListeners();
+  }
+
+  private void createDeckView() {
+    this.sideDeckView = new DeckView(
+        this.sideDeck,
         20,
         480,
         380,
         100
     );
+  }
 
-    // @TODO: See refactor notes.
-    this.deckView.addListener(this);
-    this.container.getInput().addMouseListener(this.deckView);
+  private void addInputListeners() {
+    this.sideDeckView.addListener(this);
+    this.container.getInput().addMouseListener(this.sideDeckView);
   }
 
   /**
@@ -66,7 +70,7 @@ public class DeckController extends AbstractController implements ActionListener
 
     Card clickedCard = (Card) event.get().get();
 
-    this.deck.remove(clickedCard);
+    this.sideDeck.remove(clickedCard);
 
     this.match
       .getCurrentSet()

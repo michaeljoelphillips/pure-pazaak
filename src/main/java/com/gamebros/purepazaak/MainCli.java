@@ -16,11 +16,14 @@ public class MainCli {
   public static void main(String[] args) {
     SideDeckFactory factory = new SideDeckFactory();
 
-    Player playerOne = new Player(factory.build());
-    Player playerTwo = new Player(factory.build());
+    SideDeck playerOneSideDeck = factory.build();
+    SideDeck playerTwoSideDeck = factory.build();
+
+    Player playerOne = new Player(playerOneSideDeck);
+    Player playerTwo = new Player(playerTwoSideDeck);
 
     Match match = new Match(playerOne, playerTwo);
-    match.newSet();
+    match.createNewSet();
 
     Scanner keyboard = new Scanner(System.in);
     String input;
@@ -31,7 +34,7 @@ public class MainCli {
 
       while (set.getWinner() == WinnerEnum.NONE) {
         PlayerEnum currentPlayer = match.getCurrentSet().getCurrentPlayer();
-        ArrayList<Card> sideDeck = match.getPlayerDeck(currentPlayer);
+        ArrayList<Card> sideDeck = match.getCurrentPlayerDeck();
         Board board = set.getBoard(currentPlayer);
         Card lastCard = board.getCards().get(board.getCards().size() - 1);
 
@@ -81,7 +84,7 @@ public class MainCli {
 
       System.out.println(set.getWinner() + " wins!");
 
-      match.newSet();
+      match.createNewSet();
     }
   }
 }

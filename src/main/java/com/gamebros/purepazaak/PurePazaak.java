@@ -10,7 +10,7 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
 import com.gamebros.purepazaak.ai.SimpleAI;
-import com.gamebros.purepazaak.controller.DeckController;
+import com.gamebros.purepazaak.controller.SideDeckController;
 import com.gamebros.purepazaak.controller.InventoryController;
 import com.gamebros.purepazaak.controller.MatchController;
 import com.gamebros.purepazaak.controller.UIController;
@@ -25,7 +25,7 @@ import com.gamebros.purepazaak.view.InventoryView;
 public class PurePazaak implements Game {
   protected MatchController matchController;
 
-  protected DeckController deckController;
+  protected SideDeckController deckController;
 
   protected UIController uiController;
 
@@ -68,13 +68,9 @@ public class PurePazaak implements Game {
 
     Match match = new Match(playerOne, playerTwo);
 
-    this.uiController = new UIController(container, match);
     this.matchController = new MatchController(match);
-    this.deckController = new DeckController(
-        container,
-        match.getPlayerDeck(PlayerEnum.PLAYERONE),
-        match
-    );
+    this.uiController = new UIController(container, match);
+    this.deckController = new SideDeckController(container, match);
 
     this.ai = new SimpleAI(match);
 

@@ -1,11 +1,13 @@
 package com.gamebros.purepazaak.controller;
 
+import java.util.ArrayList;
 import java.util.Optional;
 
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 
 import com.gamebros.purepazaak.Match;
+import com.gamebros.purepazaak.MatchSet;
 import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.enumerable.WinnerEnum;
@@ -41,20 +43,18 @@ public class MatchController {
 
   private void init() {
     this.startNewSet();
-    this.createPlayerTwoDeck();
+    this.createPlayerTwoDeckView();
   }
 
   private void startNewSet() {
-    this.matchSetView = new MatchSetView(this.match.newSet());
+    MatchSet matchSet = this.match.createNewSet();
+
+    this.matchSetView = new MatchSetView(matchSet);
   }
 
-  private void createPlayerTwoDeck() {
-    this.playerTwoDeckView = new DeckView(
-        this.match.getPlayerDeck(PlayerEnum.PLAYERTWO),
-        400,
-        480,
-        380,
-        100
-    );
+  private void createPlayerTwoDeckView() {
+    ArrayList<Card> playerTwoDeck = this.match.getPlayerTwoDeck();
+
+    this.playerTwoDeckView = new DeckView(playerTwoDeck, 400, 480, 380, 100);
   }
 }
