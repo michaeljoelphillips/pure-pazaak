@@ -113,17 +113,16 @@ public class MatchSet {
 
   protected void nextTurn() {
     int currentPlayerScore = this.getCurrentBoard().getTotal();
+    PlayerEnum nextPlayer = this.currentPlayer.next();
+
+    if (!this.hasPlayerStood(nextPlayer)) {
+      this.currentPlayer = nextPlayer;
+    }
 
     if (currentPlayerScore > 20) {
       this.stand();
 
       return;
-    }
-
-    PlayerEnum nextPlayer = this.currentPlayer.next();
-
-    if (!this.hasPlayerStood(nextPlayer)) {
-      this.currentPlayer = nextPlayer;
     }
 
     this.draw();
