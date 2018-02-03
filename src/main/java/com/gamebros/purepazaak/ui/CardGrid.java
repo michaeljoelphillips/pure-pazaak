@@ -8,6 +8,7 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 
 import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.valueobject.Area;
 import com.gamebros.purepazaak.view.CardView;
 
 public class CardGrid {
@@ -15,28 +16,16 @@ public class CardGrid {
 
   private static int verticalSpace = 10;
 
-  protected int x;
-
-  protected int y;
-
-  protected int width;
-
-  protected int height;
+  protected Area area;
 
   protected ArrayList<CardView> cards = new ArrayList<CardView>();
 
-  public CardGrid(int x, int y, int width, int height) {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
+  public CardGrid(Area area) {
+    this.area = area;
   }
 
-  public CardGrid(ArrayList<Card> cards, int x, int y, int width, int height) throws SlickException {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
+  public CardGrid(ArrayList<Card> cards, Area area) throws SlickException {
+    this.area = area;
 
     for (Card card : cards) {
       this.addCard(new CardView(card));
@@ -44,14 +33,14 @@ public class CardGrid {
   }
 
   public void addCard(CardView card) {
-    if ((this.x + this.width) - this.getLastX() > CardView.WIDTH) {
+    if ((this.area.x + this.area.width) - this.getLastX() > CardView.WIDTH) {
       card.place(
           this.getLastX() + horizontalSpace,
           this.getLastY()
       );
     } else {
       card.place(
-          this.x + horizontalSpace,
+          this.area.x + horizontalSpace,
           this.getLastY() + CardView.HEIGHT + verticalSpace
       );
     }
@@ -100,7 +89,7 @@ public class CardGrid {
       return card.getX() + CardView.WIDTH;
     }
 
-    return this.x;
+    return this.area.x;
   }
 
   protected int getLastY() {
@@ -110,7 +99,7 @@ public class CardGrid {
       return card.getY();
     }
 
-    return this.y;
+    return this.area.y;
   }
 
   public ArrayList<CardView> getCards() {

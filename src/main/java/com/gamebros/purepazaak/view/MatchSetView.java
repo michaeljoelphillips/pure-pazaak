@@ -10,26 +10,20 @@ import com.gamebros.purepazaak.MatchSet;
 import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.ui.CardGrid;
+import com.gamebros.purepazaak.valueobject.Area;
 
 public class MatchSetView {
   protected MatchSet matchSet;
 
-  protected CardGrid playerOneBoard = new CardGrid(
-      20,
-      60,
-      380,
-      330
-  );
+  protected CardGrid playerOneBoard;
 
-  protected CardGrid playerTwoBoard = new CardGrid(
-      400,
-      60,
-      380,
-      330
-  );
+  protected CardGrid playerTwoBoard;
 
   public MatchSetView(MatchSet matchSet) {
     this.matchSet = matchSet;
+
+    this.playerOneBoard = new CardGrid(new Area(20, 60, 380, 330));
+    this.playerTwoBoard = new CardGrid(new Area(400, 60, 380, 330));
   }
 
   public void render(Graphics graphics) throws SlickException {

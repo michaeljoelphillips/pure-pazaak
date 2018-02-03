@@ -11,16 +11,13 @@ import org.newdawn.slick.SlickException;
 
 import com.gamebros.purepazaak.ai.SimpleAI;
 import com.gamebros.purepazaak.controller.SideDeckController;
-import com.gamebros.purepazaak.controller.InventoryController;
 import com.gamebros.purepazaak.controller.MatchController;
 import com.gamebros.purepazaak.controller.UIController;
 import com.gamebros.purepazaak.entity.Card;
-import com.gamebros.purepazaak.entity.Inventory;
 import com.gamebros.purepazaak.entity.Player;
 import com.gamebros.purepazaak.entity.SideDeck;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.factory.SideDeckFactory;
-import com.gamebros.purepazaak.view.InventoryView;
 
 public class PurePazaak implements Game {
   protected MatchController matchController;
