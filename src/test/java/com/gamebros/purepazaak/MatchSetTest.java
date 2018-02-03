@@ -29,8 +29,8 @@ public class MatchSetTest {
 
   @Test
   public void testGetBoard() {
-    Board playerOneBoard = this.matchSet.getBoard(PlayerEnum.PLAYERONE);
-    Board playerTwoBoard = this.matchSet.getBoard(PlayerEnum.PLAYERTWO);
+    Board playerOneBoard = this.matchSet.getPlayerOneBoard();
+    Board playerTwoBoard = this.matchSet.getPlayerTwoBoard();
 
     assertNotSame(playerOneBoard, playerTwoBoard);
   }
@@ -43,7 +43,7 @@ public class MatchSetTest {
   @Test
   public void testPlayerOneWins() {
     this.matchSet
-      .getBoard(this.matchSet.getCurrentPlayer())
+      .getCurrentBoard()
       .addCard(new Card(10));
 
     this.matchSet.stand();
@@ -58,7 +58,7 @@ public class MatchSetTest {
     this.matchSet.stand();
 
     this.matchSet
-      .getBoard(this.matchSet.getCurrentPlayer())
+      .getCurrentBoard()
       .addCard(new Card(10));
 
     this.matchSet.stand();
@@ -69,7 +69,7 @@ public class MatchSetTest {
   @Test
   public void testPlayerOneBusts() {
     this.matchSet
-      .getBoard(this.matchSet.getCurrentPlayer())
+      .getCurrentBoard()
       .addCard(new Card(21));
 
     this.matchSet.stand();
@@ -84,7 +84,7 @@ public class MatchSetTest {
     this.matchSet.stand();
 
     this.matchSet
-      .getBoard(this.matchSet.getCurrentPlayer())
+      .getCurrentBoard()
       .addCard(new Card(21));
 
     this.matchSet.stand();

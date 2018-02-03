@@ -35,13 +35,13 @@ public class MatchSetView {
   public void render(Graphics graphics) throws SlickException {
     this.playerOneBoard.setCards(
         this.matchSet
-          .getBoard(PlayerEnum.PLAYERONE)
+          .getPlayerOneBoard()
           .getCards()
     );
 
     this.playerTwoBoard.setCards(
         this.matchSet
-          .getBoard(PlayerEnum.PLAYERTWO)
+          .getPlayerTwoBoard()
           .getCards()
     );
 
@@ -51,7 +51,7 @@ public class MatchSetView {
     graphics.drawString(
         String.valueOf(
           this.matchSet
-            .getBoard(PlayerEnum.PLAYERONE)
+            .getPlayerOneBoard()
             .getTotal()
         ),
         180,
@@ -61,7 +61,7 @@ public class MatchSetView {
     graphics.drawString(
         String.valueOf(
           this.matchSet
-            .getBoard(PlayerEnum.PLAYERTWO)
+            .getPlayerTwoBoard()
             .getTotal()
         ),
         580,

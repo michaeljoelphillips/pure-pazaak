@@ -35,7 +35,7 @@ public class MainCli {
       while (set.getWinner() == WinnerEnum.NONE) {
         PlayerEnum currentPlayer = match.getCurrentSet().getCurrentPlayer();
         ArrayList<Card> sideDeck = match.getCurrentPlayerDeck();
-        Board board = set.getBoard(currentPlayer);
+        Board board = set.getCurrentBoard();
         Card lastCard = board.getCards().get(board.getCards().size() - 1);
 
         System.out.println(currentPlayer + " drew a " + lastCard.getValue() + ".");

@@ -74,7 +74,7 @@ public class SideDeckController extends AbstractController implements ActionList
 
     this.match
       .getCurrentSet()
-      .getBoard(PlayerEnum.PLAYERONE)
+      .getPlayerOneBoard()
       .addCard(clickedCard);
   }
 }

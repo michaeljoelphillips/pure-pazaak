@@ -34,8 +34,16 @@ public class MatchSet {
     return this.winner;
   }
 
-  public Board getBoard(PlayerEnum player) {
-    return player == PlayerEnum.PLAYERONE
+  public Board getPlayerOneBoard() {
+    return this.playerOneBoard;
+  }
+
+  public Board getPlayerTwoBoard() {
+    return this.playerTwoBoard;
+  }
+
+  public Board getCurrentBoard() {
+    return this.currentPlayer == PlayerEnum.PLAYERONE
       ? this.playerOneBoard
       : this.playerTwoBoard;
   }
@@ -84,7 +92,7 @@ public class MatchSet {
   protected void draw() {
     Card card = this.mainDeck.draw();
 
-    this.getBoard(this.currentPlayer).addCard(card);
+    this.getCurrentBoard().addCard(card);
   }
 
   public void stand() {
@@ -104,7 +112,7 @@ public class MatchSet {
   }
 
   protected void nextTurn() {
-    int previousPlayerScore = this.getBoard(this.currentPlayer).getTotal();
+    int previousPlayerScore = this.getCurrentBoard().getTotal();
 
     PlayerEnum nextPlayer = this.currentPlayer.next();
 

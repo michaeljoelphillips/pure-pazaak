@@ -92,14 +92,14 @@ public class SimpleAI {
   protected int getCurrentValue() {
     return this.match
       .getCurrentSet()
-      .getBoard(PlayerEnum.PLAYERTWO)
+      .getPlayerTwoBoard()
       .getTotal();
   }
 
   protected int getOpponentValue() {
     return this.match
       .getCurrentSet()
-      .getBoard(PlayerEnum.PLAYERONE)
+      .getPlayerOneBoard()
       .getTotal();
   }
 
@@ -124,7 +124,7 @@ public class SimpleAI {
   }
 
   protected Board getBoard() {
-    return this.match.getCurrentSet().getBoard(PlayerEnum.PLAYERTWO);
+    return this.match.getCurrentSet().getPlayerTwoBoard();
   }
 
   protected boolean opponentHasStood() {
