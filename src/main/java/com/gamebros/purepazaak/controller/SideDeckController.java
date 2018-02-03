@@ -13,6 +13,7 @@ import com.gamebros.purepazaak.event.CardClickedEvent;
 import com.gamebros.purepazaak.event.ContextualEventInterface;
 import com.gamebros.purepazaak.listener.ActionListenerInterface;
 import com.gamebros.purepazaak.view.DeckView;
+import com.gamebros.purepazaak.view.PlayerOneDeckView;
 
 public class SideDeckController extends AbstractController implements ActionListenerInterface {
   protected GameContainer container;
@@ -46,13 +47,7 @@ public class SideDeckController extends AbstractController implements ActionList
   }
 
   private void createDeckView() {
-    this.sideDeckView = new DeckView(
-        this.sideDeck,
-        20,
-        480,
-        380,
-        100
-    );
+    this.sideDeckView = new PlayerOneDeckView(this.sideDeck);
   }
 
   private void addInputListeners() {

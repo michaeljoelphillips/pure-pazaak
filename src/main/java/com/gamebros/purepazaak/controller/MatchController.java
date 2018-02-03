@@ -13,6 +13,7 @@ import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.enumerable.WinnerEnum;
 import com.gamebros.purepazaak.view.DeckView;
 import com.gamebros.purepazaak.view.MatchSetView;
+import com.gamebros.purepazaak.view.PlayerTwoDeckView;
 
 public class MatchController {
   protected Match match;
@@ -55,6 +56,6 @@ public class MatchController {
   private void createPlayerTwoDeckView() {
     ArrayList<Card> playerTwoDeck = this.match.getPlayerTwoDeck();
 
-    this.playerTwoDeckView = new DeckView(playerTwoDeck, 400, 480, 380, 100);
+    this.playerTwoDeckView = new PlayerTwoDeckView(playerTwoDeck);
   }
 }

@@ -12,22 +12,14 @@ import com.gamebros.purepazaak.event.CardClickedEvent;
 import com.gamebros.purepazaak.ui.CardGrid;
 import com.gamebros.purepazaak.view.AbstractView;
 
-public class DeckView extends AbstractView {
+abstract public class DeckView extends AbstractView {
   protected ArrayList<Card> deck;
 
   protected CardGrid grid;
 
-  public DeckView(
-      ArrayList<Card> deck,
-      int x,
-      int y,
-      int width,
-      int height
-  ) {
+  public DeckView(ArrayList<Card> deck) {
     this.deck = deck;
     this.acceptsInput = true;
-
-    this.grid = new CardGrid(x, y, width, height);
   }
 
   public void render(Graphics graphics) {
