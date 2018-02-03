@@ -16,12 +16,6 @@ public class SimpleAI {
   }
 
   public void update() {
-    // Stand if value equals 20
-    // Play a card from the side deck if it would make the value equal 20
-    // Play a card from the side deck to get as close to 20 as possible
-    // Stand as close to 20 as possible
-    // If the other play has stood, beat their score.
-
     if (!this.isAiTurn()) {
       return;
     }

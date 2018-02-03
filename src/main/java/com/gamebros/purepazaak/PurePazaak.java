@@ -50,7 +50,7 @@ public class PurePazaak implements Game {
   public void update(GameContainer container, int delta) {
     this.time += delta;
 
-    // Simulate time thinking.
+    // Delay when the AI plays a card to slow the game down and feel more human-like.
     if (this.time >= 1000) {
       this.ai.update();
 
