@@ -81,7 +81,7 @@ public class MatchSet {
     return this.playersStood.size() == 2;
   }
 
-  public boolean hasStood(PlayerEnum player) {
+  public boolean hasPlayerStood(PlayerEnum player) {
     return this.playersStood.contains(player);
   }
 
@@ -116,7 +116,7 @@ public class MatchSet {
 
     PlayerEnum nextPlayer = this.currentPlayer.next();
 
-    if (!this.hasStood(nextPlayer)) {
+    if (!this.hasPlayerStood(nextPlayer)) {
       this.currentPlayer = nextPlayer;
     }
 

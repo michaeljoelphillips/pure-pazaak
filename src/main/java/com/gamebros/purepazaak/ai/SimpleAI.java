@@ -36,7 +36,7 @@ public class SimpleAI {
       return;
     }
 
-    if (this.opponentHasStood()) {
+    if (this.opponenthasPlayerStood()) {
       if (currentValue > opponentValue) {
         this.stand();
 
@@ -127,9 +127,9 @@ public class SimpleAI {
     return this.match.getCurrentSet().getPlayerTwoBoard();
   }
 
-  protected boolean opponentHasStood() {
+  protected boolean opponenthasPlayerStood() {
     return this.match
       .getCurrentSet()
-      .hasStood(PlayerEnum.PLAYERONE);
+      .hasPlayerStood(PlayerEnum.PLAYERONE);
   }
 }
