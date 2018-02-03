@@ -103,17 +103,14 @@ public class SimpleAI {
   }
 
   protected void stand() {
-    System.out.println("AI stood at " + Integer.toString(this.getCurrentValue()));
     this.match.getCurrentSet().stand();
   }
 
   protected void endTurn() {
-    System.out.println("AI ended turn at " + Integer.toString(this.getCurrentValue()));
     this.match.getCurrentSet().endTurn();
   }
 
   protected void playCard(Card card) {
-    System.out.println("AI played card valued at " + Integer.toString(card.getValue()));
     this.getSideDeck().remove(card);
     this.getBoard().addCard(card);
   }
