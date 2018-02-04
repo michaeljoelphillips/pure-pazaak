@@ -2,6 +2,8 @@ package com.gamebros.purepazaak;
 
 import java.util.ArrayList;
 
+import javax.inject.Inject;
+
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.Game;
 import org.newdawn.slick.GameContainer;
@@ -10,9 +12,9 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
 import com.gamebros.purepazaak.ai.SimpleAI;
-import com.gamebros.purepazaak.controller.SideDeckController;
 import com.gamebros.purepazaak.controller.InventoryController;
 import com.gamebros.purepazaak.controller.MatchController;
+import com.gamebros.purepazaak.controller.SideDeckController;
 import com.gamebros.purepazaak.controller.UIController;
 import com.gamebros.purepazaak.entity.Card;
 import com.gamebros.purepazaak.entity.Inventory;
@@ -32,6 +34,20 @@ public class PurePazaak implements Game {
   protected SimpleAI ai;
 
   protected int time = 0;
+
+
+  @Inject
+  public PurePazaak(
+      MatchController matchController,
+      SideDeckController deckController,
+      UIController uiController,
+      SimpleAI ai
+  ) {
+    this.matchController = matchController;
+    this.deckController = deckController;
+    this.uiController = uiController;
+    this.ai = ai;
+  }
 
   public String getTitle() {
     return "Pure Pazaak";
