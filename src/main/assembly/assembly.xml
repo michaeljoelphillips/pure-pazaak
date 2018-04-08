@@ -20,6 +20,7 @@
         <include>*.dll</include>
         <include>*.so</include>
         <include>*.jnilib</include>
+        <include>*.dylib</include>
       </includes>
     </fileSet>
 
