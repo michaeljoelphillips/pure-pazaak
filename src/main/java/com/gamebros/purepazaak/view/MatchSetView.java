@@ -55,7 +55,7 @@ public class MatchSetView {
             .getTotal()
         ),
         480,
-        200
+        180
     );
 
     graphics.drawString(
@@ -65,7 +65,7 @@ public class MatchSetView {
             .getTotal()
         ),
         1440,
-        200
+        180
     );
   }
 }
