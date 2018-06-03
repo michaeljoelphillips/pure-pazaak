@@ -2,12 +2,12 @@ package com.gamebros.purepazaak;
 
 import java.util.ArrayList;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 
 public class Board {
-  protected ArrayList<Card> cards = new ArrayList<Card>();
+  protected ArrayList<CardInterface> cards = new ArrayList<CardInterface>();
 
-  public void addCard(Card card) {
+  public void addCard(CardInterface card) {
     this.cards.add(card);
   }
 
@@ -15,11 +15,11 @@ public class Board {
     return this
       .cards
       .stream()
-      .mapToInt(Card::getValue)
+      .mapToInt(CardInterface::getValue)
       .sum();
   }
 
-  public ArrayList<Card> getCards() {
+  public ArrayList<CardInterface> getCards() {
     return this.cards;
   }
 }

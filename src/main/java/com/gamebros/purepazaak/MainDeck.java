@@ -6,26 +6,27 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
+import com.gamebros.purepazaak.entity.MainCard;
 
 public class MainDeck {
-  protected LinkedList<Card> cards;
+  protected LinkedList<CardInterface> cards;
 
   public MainDeck() {
-    this.cards = new LinkedList<Card>();
+    this.cards = new LinkedList<CardInterface>();
 
     // Create a deck of 40 cards numbered 1 through 10.
     for (int x = 0; x <= 4; x++) {
       for (int i = 1; i < 10; i++) {
-        this.cards.add(new Card(i));
+        this.cards.add(new MainCard(i));
       }
     }
 
     Collections.shuffle(this.cards);
   }
 
-  public Card draw() throws NoSuchElementException {
-    Card card = this.cards.remove();
+  public CardInterface draw() throws NoSuchElementException {
+    CardInterface card = this.cards.remove();
 
     return card;
   }

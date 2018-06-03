@@ -3,33 +3,33 @@ package com.gamebros.purepazaak.entity;
 import java.util.ArrayList;
 
 public class Inventory {
-  protected ArrayList<Card> cards;
+  protected ArrayList<CardInterface> cards;
 
   public Inventory() {
-    cards = new ArrayList<Card>();
+    cards = new ArrayList<CardInterface>();
   }
 
-  public Inventory(ArrayList<Card> cards) {
+  public Inventory(ArrayList<CardInterface> cards) {
     this.cards = cards;
   }
 
-  public ArrayList<Card> getCards() {
+  public ArrayList<CardInterface> getCards() {
     return cards;
   }
 
-  public Inventory setCards(ArrayList<Card> cards) {
+  public Inventory setCards(ArrayList<CardInterface> cards) {
     this.cards = cards;
 
     return this;
   }
 
-  public Inventory addCard(Card card) {
+  public Inventory addCard(CardInterface card) {
     cards.add(card);
 
     return this;
   }
 
-  public Inventory removeCard(Card card) {
+  public Inventory removeCard(CardInterface card) {
     cards.remove(card);
 
     return this;

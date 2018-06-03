@@ -1,6 +1,7 @@
 package com.gamebros.purepazaak;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.MainCard;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.entity.SideDeck;
 import com.gamebros.purepazaak.exception.CardNotFoundException;
 import com.gamebros.purepazaak.exception.SideDeckFullException;
@@ -17,10 +18,10 @@ public class SideDeckTest {
 
   @Test
   public void testGreaterThanTenCards() {
-    ArrayList<Card> cards = new ArrayList<Card>();
+    ArrayList<CardInterface> cards = new ArrayList<CardInterface>();
 
     for (int i = 0; i < 15; i++) {
-      cards.add(new Card(i));
+      cards.add(new MainCard(i));
     }
 
     exception.expect(IllegalArgumentException.class);
@@ -32,7 +33,7 @@ public class SideDeckTest {
   public void testAddCard() throws SideDeckFullException {
     SideDeck deck = new SideDeck();
 
-    deck.addCard(new Card(4));
+    deck.addCard(new MainCard(4));
 
     assertEquals(1, deck.getCards().size());
   }
@@ -44,7 +45,7 @@ public class SideDeckTest {
     exception.expect(SideDeckFullException.class);
 
     for (int i = 1; i <= 11; i++) {
-      deck.addCard(new Card(i));
+      deck.addCard(new MainCard(i));
     }
   }
 
@@ -54,7 +55,7 @@ public class SideDeckTest {
 
     exception.expect(CardNotFoundException.class);
 
-    deck.removeCard(new Card(1));
+    deck.removeCard(new MainCard(1));
   }
 
   @Test
@@ -62,10 +63,10 @@ public class SideDeckTest {
     SideDeck deck = new SideDeck();
 
     for (int i = 1; i <= 10; i++) {
-      deck.addCard(new Card(i));
+      deck.addCard(new MainCard(i));
     }
 
-    ArrayList<Card> playableDeck = deck.drawRandomCards();
+    ArrayList<CardInterface> playableDeck = deck.drawRandomCards();
 
     assertEquals(4, playableDeck.size());
   }

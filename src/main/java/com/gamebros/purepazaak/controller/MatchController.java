@@ -8,7 +8,7 @@ import org.newdawn.slick.Graphics;
 
 import com.gamebros.purepazaak.Match;
 import com.gamebros.purepazaak.MatchSet;
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.enumerable.WinnerEnum;
 import com.gamebros.purepazaak.view.DeckView;
@@ -54,7 +54,7 @@ public class MatchController {
   }
 
   private void createPlayerTwoDeckView() {
-    ArrayList<Card> playerTwoDeck = this.match.getPlayerTwoDeck();
+    ArrayList<CardInterface> playerTwoDeck = this.match.getPlayerTwoDeck();
 
     this.playerTwoDeckView = new PlayerTwoDeckView(playerTwoDeck);
   }

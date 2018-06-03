@@ -7,7 +7,7 @@ import org.newdawn.slick.SlickException;
 
 import com.gamebros.purepazaak.Match;
 import com.gamebros.purepazaak.MatchSet;
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.ui.CardGrid;
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.entity.Player;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.enumerable.WinnerEnum;
@@ -14,9 +14,9 @@ public class Match {
 
   protected Player playerTwo;
 
-  protected ArrayList<Card> playerOneDeck;
+  protected ArrayList<CardInterface> playerOneDeck;
 
-  protected ArrayList<Card> playerTwoDeck;
+  protected ArrayList<CardInterface> playerTwoDeck;
 
   protected ArrayList<MatchSet> matchSets = new ArrayList<MatchSet>();
 
@@ -125,15 +125,15 @@ public class Match {
     return null;
   }
 
-  public ArrayList<Card> getPlayerOneDeck() {
+  public ArrayList<CardInterface> getPlayerOneDeck() {
     return this.playerOneDeck;
   }
 
-  public ArrayList<Card> getPlayerTwoDeck() {
+  public ArrayList<CardInterface> getPlayerTwoDeck() {
     return this.playerTwoDeck;
   }
 
-  public ArrayList<Card> getCurrentPlayerDeck() {
+  public ArrayList<CardInterface> getCurrentPlayerDeck() {
     MatchSet currentSet = this.getCurrentSet();
     PlayerEnum currentPlayer = currentSet.getCurrentPlayer();
 

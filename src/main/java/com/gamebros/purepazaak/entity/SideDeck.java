@@ -6,19 +6,19 @@ import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class SideDeck {
-  protected ArrayList<Card> cards;
+  protected ArrayList<CardInterface> cards;
 
   public SideDeck() {
-    this.cards = new ArrayList<Card>();
+    this.cards = new ArrayList<CardInterface>();
   }
 
-  public SideDeck(ArrayList<Card> cards) throws IllegalArgumentException {
+  public SideDeck(ArrayList<CardInterface> cards) throws IllegalArgumentException {
     this.setCards(cards);
   }
 
-  public ArrayList<Card> drawRandomCards() {
-    ArrayList<Card> result = new ArrayList<Card>(4);
-    ArrayList<Card> clone = new ArrayList<Card>(this.cards);
+  public ArrayList<CardInterface> drawRandomCards() {
+    ArrayList<CardInterface> result = new ArrayList<CardInterface>(4);
+    ArrayList<CardInterface> clone = new ArrayList<CardInterface>(this.cards);
 
     while (result.size() < 4) {
       int index = ThreadLocalRandom.current().nextInt(0, clone.size());
@@ -31,11 +31,11 @@ public class SideDeck {
     return result;
   }
 
-  public ArrayList<Card> getCards() {
+  public ArrayList<CardInterface> getCards() {
     return cards;
   }
 
-  public SideDeck setCards(ArrayList<Card> cards) throws IllegalArgumentException {
+  public SideDeck setCards(ArrayList<CardInterface> cards) throws IllegalArgumentException {
     if (cards.size() > 10) {
       throw new IllegalArgumentException(String.format(
           "A Side Deck may only contain 10 cards.  %d received.",
@@ -48,7 +48,7 @@ public class SideDeck {
     return this;
   }
 
-  public SideDeck addCard(Card card) throws SideDeckFullException {
+  public SideDeck addCard(CardInterface card) throws SideDeckFullException {
     if (cards.size() == 10) {
       throw new SideDeckFullException();
     }
@@ -58,7 +58,7 @@ public class SideDeck {
     return this;
   }
 
-  public SideDeck removeCard(Card card) throws CardNotFoundException {
+  public SideDeck removeCard(CardInterface card) throws CardNotFoundException {
     if (!cards.contains(card)) {
       throw new CardNotFoundException();
     }

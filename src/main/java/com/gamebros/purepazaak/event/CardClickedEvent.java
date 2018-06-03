@@ -2,13 +2,13 @@ package com.gamebros.purepazaak.event;
 
 import java.util.Optional;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.event.ContextualEventInterface;
 
 public class CardClickedEvent implements ContextualEventInterface {
-  protected Card clickedCard;
+  protected CardInterface clickedCard;
 
-  public CardClickedEvent(Card clickedCard) {
+  public CardClickedEvent(CardInterface clickedCard) {
     this.clickedCard = clickedCard;
   }
 

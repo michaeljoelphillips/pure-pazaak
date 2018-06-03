@@ -1,6 +1,6 @@
 // package com.gamebros.purepazaak;
 
-// import com.gamebros.purepazaak.entity.Card;
+// import com.gamebros.purepazaak.entity.CardInterface;
 // import com.gamebros.purepazaak.MainDeck;
 // import org.junit.Rule;
 // import org.junit.Test;
@@ -13,7 +13,7 @@
 //   public void testDraw() {
 //     MainDeck deck = new MainDeck();
 
-//     Card card = deck.draw();
+//     CardInterface card = deck.draw();
 
 //     assertEquals(4, card.getValue());
 //   }
