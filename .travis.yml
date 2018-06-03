@@ -4,7 +4,7 @@ deploy:
   provider: releases
   api_key:
     secure: V8QP5gSbP3qfTnUUI5rq03ZUrCNQWxeJ+4Zil/E62ibeKzlIHSvBipEQ9a7CTI/W39azynp+VGY321/naVcY0yZtWqlKY0vYpvHAnrqqlUSjiA4APx6eg0St+RVOVldxjRFn1icnEHxw9e/VkMJ+Jby3GWwZjlaiSax63qySqktYajMPhDa6+4Y7dis0SGoH4tex172NAFmqT1LgXrNm4XGqOqKmyD9HnKDM9D/hqQNP9gtI5cc5NCY0/KVzokx1cdMaIUGSRq13KR6y7cJrVWpAw70r4cqhIJ25PjTHizBxj9JntA/UzlhvYhCUhu9Ef8p87l+37px++51o3htt1hl6ZYkoO7qcYi4Oy48L2vV9HRa0EJh9Jc1/P6tuXjgqCJN5gz3zABaZslw8YqH9dwswtdXj0N1spsrhIbz8Y0f0/+YIdPRNVCbSobNJcDf5saazgEr7+L4GSWJsmzqlyEpnFJ/2AcMInLHKUSpD1eOR5uQok5DJJTYskoVrevYSCdeGK/Bv9oixww5r3Tk2fQYCjzFYQTo7ZKZGRamH+9iudlXup7u9TOC/O1u6wj1m/sMsn87wu1Zi4QgD70/LzQR8CN0QYTMILs8PEr2E8joyARYfSck+9bUp0DDrwpwh9xeSLFHFwi15IRhr+YS1tbFL3cR8bK6GghasW2lXis4=
-  file: target/pure-pazaak-0.1.0-release.zip
+  file: target/pure-pazaak-0.2.0-release.zip
   skip_cleanup: true
   on:
     tags: true
