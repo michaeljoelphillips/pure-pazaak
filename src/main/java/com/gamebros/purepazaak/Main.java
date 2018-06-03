@@ -18,6 +18,7 @@ public class Main {
     AppGameContainer app = new AppGameContainer(new PurePazaak());
     app.setDisplayMode(1920, 1080, true);
     app.setForceExit(false);
+    app.setTargetFrameRate(60);
     app.start();
   }
 }
