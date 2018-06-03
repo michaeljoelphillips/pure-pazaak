@@ -7,7 +7,7 @@ import org.newdawn.slick.SlickException;
 
 import com.gamebros.purepazaak.Match;
 import com.gamebros.purepazaak.MatchSet;
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.ui.CardGrid;
 
@@ -15,17 +15,17 @@ public class MatchSetView {
   protected MatchSet matchSet;
 
   protected CardGrid playerOneBoard = new CardGrid(
-      20,
-      60,
-      380,
-      330
+      190,
+      235,
+      580,
+      570
   );
 
   protected CardGrid playerTwoBoard = new CardGrid(
-      400,
-      60,
-      380,
-      330
+      1160,
+      235,
+      580,
+      570
   );
 
   public MatchSetView(MatchSet matchSet) {
@@ -54,8 +54,8 @@ public class MatchSetView {
             .getPlayerOneBoard()
             .getTotal()
         ),
-        180,
-        20
+        480,
+        180
     );
 
     graphics.drawString(
@@ -64,8 +64,8 @@ public class MatchSetView {
             .getPlayerTwoBoard()
             .getTotal()
         ),
-        580,
-        20
+        1440,
+        180
     );
   }
 }

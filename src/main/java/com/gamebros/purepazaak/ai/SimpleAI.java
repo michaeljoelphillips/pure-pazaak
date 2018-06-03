@@ -5,7 +5,7 @@ import java.util.Optional;
 
 import com.gamebros.purepazaak.Board;
 import com.gamebros.purepazaak.Match;
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 
 public class SimpleAI {
@@ -22,7 +22,7 @@ public class SimpleAI {
 
     int currentValue = this.getCurrentValue();
     int opponentValue = this.getOpponentValue();
-    ArrayList<Card> sideDeck = this.getSideDeck();
+    ArrayList<CardInterface> sideDeck = this.getSideDeck();
 
     if (currentValue == 20) {
       this.stand();
@@ -39,7 +39,7 @@ public class SimpleAI {
       }
 
       if (opponentValue >= 15 && opponentValue <= 20) {
-        Optional<Card> card = sideDeck
+        Optional<CardInterface> card = sideDeck
             .stream()
             .filter(
                 c -> c.getValue() + currentValue >= opponentValue
@@ -63,7 +63,7 @@ public class SimpleAI {
     }
 
     if (currentValue >= 14 && sideDeck.size() > 0) {
-      Optional<Card> card = sideDeck
+      Optional<CardInterface> card = sideDeck
           .stream()
           .filter(c -> c.getValue() + currentValue == 20)
           .findFirst();
@@ -98,7 +98,7 @@ public class SimpleAI {
       .getTotal();
   }
 
-  protected ArrayList<Card> getSideDeck() {
+  protected ArrayList<CardInterface> getSideDeck() {
     return this.match.getCurrentPlayerDeck();
   }
 
@@ -110,7 +110,7 @@ public class SimpleAI {
     this.match.getCurrentSet().endTurn();
   }
 
-  protected void playCard(Card card) {
+  protected void playCard(CardInterface card) {
     this.getSideDeck().remove(card);
     this.getBoard().addCard(card);
   }

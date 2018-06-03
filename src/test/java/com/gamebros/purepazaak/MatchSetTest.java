@@ -2,7 +2,8 @@ package com.gamebros.purepazaak;
 
 import com.gamebros.purepazaak.Board;
 import com.gamebros.purepazaak.MainDeck;
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
+import com.gamebros.purepazaak.entity.MainCard;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.enumerable.WinnerEnum;
 import org.junit.Before;
@@ -44,7 +45,7 @@ public class MatchSetTest {
   public void testPlayerOneWins() {
     this.matchSet
       .getCurrentBoard()
-      .addCard(new Card(10));
+      .addCard(new MainCard(10));
 
     this.matchSet.stand();
 
@@ -59,7 +60,7 @@ public class MatchSetTest {
 
     this.matchSet
       .getCurrentBoard()
-      .addCard(new Card(10));
+      .addCard(new MainCard(10));
 
     this.matchSet.stand();
 
@@ -70,7 +71,7 @@ public class MatchSetTest {
   public void testPlayerOneBusts() {
     this.matchSet
       .getCurrentBoard()
-      .addCard(new Card(21));
+      .addCard(new MainCard(21));
 
     this.matchSet.stand();
 
@@ -85,7 +86,7 @@ public class MatchSetTest {
 
     this.matchSet
       .getCurrentBoard()
-      .addCard(new Card(21));
+      .addCard(new MainCard(21));
 
     this.matchSet.stand();
 

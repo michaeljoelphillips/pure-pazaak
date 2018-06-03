@@ -1,17 +1,17 @@
 package com.gamebros.purepazaak.view;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.geom.Rectangle;
 
 public class CardView {
-  public static int WIDTH = 80;
+  public static int WIDTH = 130;
 
-  public static int HEIGHT = 100;
+  public static int HEIGHT = 190;
 
-  protected Card card;
+  protected CardInterface card;
 
   protected Image image;
 
@@ -23,10 +23,10 @@ public class CardView {
 
   protected boolean placed = false;
 
-  public CardView(Card card) throws SlickException {
+  public CardView(CardInterface card) throws SlickException {
     this.card = card;
 
-    this.image = new Image("textures/card.png");
+    this.image = new Image(card.getImagePath());
     this.rectangle = new Rectangle(0, 0, WIDTH, HEIGHT);
   }
 
@@ -47,11 +47,11 @@ public class CardView {
   }
 
   private float getStringPositionX() {
-    return this.getX() + 35;
+    return this.getX() + 57;
   }
 
   private float getStringPositionY() {
-    return this.getY() + 22;
+    return this.getY() + 85;
   }
 
   public int getX() {
@@ -62,7 +62,7 @@ public class CardView {
     return (int) this.rectangle.getY();
   }
 
-  public Card getCard() {
+  public CardInterface getCard() {
     return this.card;
   }
 

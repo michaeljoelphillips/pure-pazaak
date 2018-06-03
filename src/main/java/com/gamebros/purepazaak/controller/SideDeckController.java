@@ -7,7 +7,7 @@ import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 
 import com.gamebros.purepazaak.Match;
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.event.CardClickedEvent;
 import com.gamebros.purepazaak.event.ContextualEventInterface;
@@ -18,7 +18,7 @@ import com.gamebros.purepazaak.view.PlayerOneDeckView;
 public class SideDeckController extends AbstractController implements ActionListenerInterface {
   protected GameContainer container;
 
-  protected ArrayList<Card> sideDeck;
+  protected ArrayList<CardInterface> sideDeck;
 
   protected DeckView sideDeckView;
 
@@ -63,7 +63,7 @@ public class SideDeckController extends AbstractController implements ActionList
     //   throw new Exception("Cannot handle an event without a Card Set.");
     // }
 
-    Card clickedCard = (Card) event.get().get();
+    CardInterface clickedCard = (CardInterface) event.get().get();
 
     this.sideDeck.remove(clickedCard);
 

@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.view.CardView;
 
 public class CardGrid {
@@ -32,13 +32,13 @@ public class CardGrid {
     this.height = height;
   }
 
-  public CardGrid(ArrayList<Card> cards, int x, int y, int width, int height) throws SlickException {
+  public CardGrid(ArrayList<CardInterface> cards, int x, int y, int width, int height) throws SlickException {
     this.x = x;
     this.y = y;
     this.width = width;
     this.height = height;
 
-    for (Card card : cards) {
+    for (CardInterface card : cards) {
       this.addCard(new CardView(card));
     }
   }
@@ -59,21 +59,21 @@ public class CardGrid {
     this.cards.add(card);
   }
 
-  public void setCards(ArrayList<Card> cards) throws SlickException {
+  public void setCards(ArrayList<CardInterface> cards) throws SlickException {
     // Add new cards.
     // Remove missing cards.
 
-    ArrayList<Card> currentCards = this.cards
+    ArrayList<CardInterface> currentCards = this.cards
         .stream()
         .map(view -> view.getCard())
-        .collect(Collectors.toCollection(ArrayList<Card>::new));
+        .collect(Collectors.toCollection(ArrayList<CardInterface>::new));
 
     // Removed Cards
-    ArrayList<Card> removedCards = (ArrayList<Card>)currentCards.clone();
+    ArrayList<CardInterface> removedCards = (ArrayList<CardInterface>)currentCards.clone();
     removedCards.removeAll(cards);
 
     // New Cards
-    ArrayList<Card> newCards = (ArrayList<Card>)cards.clone();
+    ArrayList<CardInterface> newCards = (ArrayList<CardInterface>)cards.clone();
     newCards.removeAll(currentCards);
 
     ArrayList<CardView> removedViews = this.cards
@@ -86,7 +86,7 @@ public class CardGrid {
 
     this.cards.removeAll(removedViews);
 
-    for (Card card : newCards) {
+    for (CardInterface card : newCards) {
       if (!currentCards.contains(card)) {
         this.addCard(new CardView(card));
       }
@@ -123,7 +123,7 @@ public class CardGrid {
     }
   }
 
-  public Optional<Card> getClickedCard(int x, int y) {
+  public Optional<CardInterface> getClickedCard(int x, int y) {
     Optional<CardView> clickedView = this.cards
         .stream()
         .filter(view -> view.wasClicked(x, y))

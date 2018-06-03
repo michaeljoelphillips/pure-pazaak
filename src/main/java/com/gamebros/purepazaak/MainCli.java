@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.entity.Player;
 import com.gamebros.purepazaak.entity.SideDeck;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
@@ -34,9 +34,9 @@ public class MainCli {
 
       while (set.getWinner() == WinnerEnum.NONE) {
         PlayerEnum currentPlayer = match.getCurrentSet().getCurrentPlayer();
-        ArrayList<Card> sideDeck = match.getCurrentPlayerDeck();
+        ArrayList<CardInterface> sideDeck = match.getCurrentPlayerDeck();
         Board board = set.getCurrentBoard();
-        Card lastCard = board.getCards().get(board.getCards().size() - 1);
+        CardInterface lastCard = board.getCards().get(board.getCards().size() - 1);
 
         System.out.println(currentPlayer + " drew a " + lastCard.getValue() + ".");
 

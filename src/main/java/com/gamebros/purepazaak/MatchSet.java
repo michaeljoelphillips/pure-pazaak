@@ -3,7 +3,7 @@ package com.gamebros.purepazaak;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.entity.Player;
 import com.gamebros.purepazaak.enumerable.PlayerEnum;
 import com.gamebros.purepazaak.enumerable.WinnerEnum;
@@ -90,7 +90,7 @@ public class MatchSet {
   }
 
   protected void draw() {
-    Card card = this.mainDeck.draw();
+    CardInterface card = this.mainDeck.draw();
 
     this.getCurrentBoard().addCard(card);
   }

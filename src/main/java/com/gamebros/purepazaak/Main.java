@@ -16,8 +16,9 @@ public class Main {
    */
   public static void main(String[] args) throws SlickException {
     AppGameContainer app = new AppGameContainer(new PurePazaak());
-    app.setDisplayMode(800, 600, false);
+    app.setDisplayMode(1920, 1080, true);
     app.setForceExit(false);
+    app.setTargetFrameRate(60);
     app.start();
   }
 }

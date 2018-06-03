@@ -1,6 +1,7 @@
 package com.gamebros.purepazaak;
 
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.MainCard;
+import com.gamebros.purepazaak.entity.CardInterface;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -27,8 +28,8 @@ public class CardTest extends TestCase {
    * Test Value Getter.
    */
   public void testGetValue() {
-    Card positive = new Card(4);
-    Card negative = new Card(-6);
+    CardInterface positive = new MainCard(4);
+    CardInterface negative = new MainCard(-6);
 
     assertEquals(4, positive.getValue());
     assertEquals(-6, negative.getValue());

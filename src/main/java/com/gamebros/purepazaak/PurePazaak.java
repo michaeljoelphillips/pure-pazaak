@@ -14,7 +14,7 @@ import com.gamebros.purepazaak.controller.SideDeckController;
 import com.gamebros.purepazaak.controller.InventoryController;
 import com.gamebros.purepazaak.controller.MatchController;
 import com.gamebros.purepazaak.controller.UIController;
-import com.gamebros.purepazaak.entity.Card;
+import com.gamebros.purepazaak.entity.CardInterface;
 import com.gamebros.purepazaak.entity.Inventory;
 import com.gamebros.purepazaak.entity.Player;
 import com.gamebros.purepazaak.entity.SideDeck;

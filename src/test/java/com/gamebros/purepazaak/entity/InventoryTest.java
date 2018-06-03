@@ -7,6 +7,9 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
+import com.gamebros.purepazaak.entity.CardInterface;
+import com.gamebros.purepazaak.entity.MainCard;
+
 public class InventoryTest {
   protected Inventory inventory;
 
@@ -17,10 +20,10 @@ public class InventoryTest {
 
   @Test
   public void testSetCards() {
-    ArrayList<Card> cards = new ArrayList<Card>();
+    ArrayList<CardInterface> cards = new ArrayList<CardInterface>();
 
-    cards.add(new Card(1));
-    cards.add(new Card(2));
+    cards.add(new MainCard(1));
+    cards.add(new MainCard(2));
 
     inventory.setCards(cards);
 
@@ -29,7 +32,7 @@ public class InventoryTest {
 
   @Test
   public void testAddCard() {
-    Card card = new Card(4);
+    CardInterface card = new MainCard(4);
 
     inventory.addCard(card);
 
@@ -38,12 +41,12 @@ public class InventoryTest {
 
   @Test
   public void testRemoveCard() {
-    ArrayList<Card> cards = new ArrayList<Card>();
+    ArrayList<CardInterface> cards = new ArrayList<CardInterface>();
 
-    Card card = new Card(4);
+    CardInterface card = new MainCard(4);
 
-    cards.add(new Card(2));
-    cards.add(new Card(3));
+    cards.add(new MainCard(2));
+    cards.add(new MainCard(3));
     cards.add(card);
 
     inventory.setCards(cards);
