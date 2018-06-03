@@ -26,8 +26,8 @@ public class UIController
   }
 
   protected void init() {
-    this.endTurnButton = new ButtonView("End Turn", 100, 410);
-    this.standButton = new ButtonView("Stand", 210, 410);
+    this.endTurnButton = new ButtonView("End Turn", 910, 870);
+    this.standButton = new ButtonView("Stand", 910, 910);
 
     this.endTurnButton.addListener(
         new ActionListenerInterface() {
