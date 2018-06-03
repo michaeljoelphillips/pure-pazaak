@@ -7,9 +7,9 @@ import org.newdawn.slick.SlickException;
 import org.newdawn.slick.geom.Rectangle;
 
 public class CardView {
-  public static int WIDTH = 80;
+  public static int WIDTH = 130;
 
-  public static int HEIGHT = 100;
+  public static int HEIGHT = 190;
 
   protected Card card;
 
