@@ -26,7 +26,7 @@ public class CardView {
   public CardView(Card card) throws SlickException {
     this.card = card;
 
-    this.image = new Image("textures/card.png");
+    this.image = new Image("cards/main.png");
     this.rectangle = new Rectangle(0, 0, WIDTH, HEIGHT);
   }
 
