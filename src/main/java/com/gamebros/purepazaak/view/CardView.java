@@ -47,11 +47,11 @@ public class CardView {
   }
 
   private float getStringPositionX() {
-    return this.getX() + 35;
+    return this.getX() + 57;
   }
 
   private float getStringPositionY() {
-    return this.getY() + 22;
+    return this.getY() + 85;
   }
 
   public int getX() {
