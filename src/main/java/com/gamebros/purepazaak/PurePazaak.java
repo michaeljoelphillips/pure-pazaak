@@ -42,9 +42,21 @@ public class PurePazaak implements Game {
   }
 
   public void render(GameContainer container, Graphics graphics) throws SlickException {
+    this.renderBackground();
+
     this.matchController.render(graphics);
     this.deckController.render(graphics);
     this.uiController.render(graphics);
+  }
+
+  private void renderBackground() {
+    try {
+      Image background = new Image("background.png");
+
+      background.draw(0, 0);
+    } catch (SlickException e) {
+      return;
+    }
   }
 
   public void update(GameContainer container, int delta) {
