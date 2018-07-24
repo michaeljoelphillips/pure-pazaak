@@ -1,0 +1,11 @@
+<module rename-to='pure-pazaak'>
+  <inherits name='playn.Scene'/>
+  <inherits name='PurePazaakAssets'/>
+
+  <source path='core'/>
+  <source path='html'/>
+
+  <public path="resources" />
+
+  <entry-point class='com.github.nomad145.purepazaak.html.PurePazaakHtml'/>
+</module>
