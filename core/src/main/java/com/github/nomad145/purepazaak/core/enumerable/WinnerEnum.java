@@ -1,4 +1,4 @@
-package com.github.nomad145.purepazaak.enumerable;
+package com.github.nomad145.purepazaak.core.enumerable;
 
 public enum WinnerEnum {
   NONE,

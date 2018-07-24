@@ -1,7 +1,7 @@
-package com.github.nomad145.purepazaak.entity;
+package com.github.nomad145.purepazaak.core.entity;
 
-import com.github.nomad145.purepazaak.entity.Inventory;
-import com.github.nomad145.purepazaak.entity.SideDeck;
+import com.github.nomad145.purepazaak.core.entity.Inventory;
+import com.github.nomad145.purepazaak.core.entity.SideDeck;
 
 public class Player {
   protected Inventory inventory;

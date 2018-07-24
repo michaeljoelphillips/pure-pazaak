@@ -1,7 +1,7 @@
-package com.github.nomad145.purepazaak.entity;
+package com.github.nomad145.purepazaak.core.entity;
 
-import com.github.nomad145.purepazaak.exception.CardNotFoundException;
-import com.github.nomad145.purepazaak.exception.SideDeckFullException;
+import com.github.nomad145.purepazaak.core.exception.CardNotFoundException;
+import com.github.nomad145.purepazaak.core.exception.SideDeckFullException;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 

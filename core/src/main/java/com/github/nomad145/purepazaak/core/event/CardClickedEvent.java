@@ -1,9 +1,9 @@
-package com.github.nomad145.purepazaak.event;
+package com.github.nomad145.purepazaak.core.event;
 
 import java.util.Optional;
 
-import com.github.nomad145.purepazaak.entity.CardInterface;
-import com.github.nomad145.purepazaak.event.ContextualEventInterface;
+import com.github.nomad145.purepazaak.core.entity.CardInterface;
+import com.github.nomad145.purepazaak.core.event.ContextualEventInterface;
 
 public class CardClickedEvent implements ContextualEventInterface {
   protected CardInterface clickedCard;

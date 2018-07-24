@@ -1,4 +1,4 @@
-package com.github.nomad145.purepazaak.entity;
+package com.github.nomad145.purepazaak.core.entity;
 
 import java.util.ArrayList;
 

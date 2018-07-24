@@ -1,4 +1,4 @@
-package com.github.nomad145.purepazaak.event;
+package com.github.nomad145.purepazaak.core.event;
 
 import java.util.Optional;
 

@@ -1,12 +1,12 @@
-package com.github.nomad145.purepazaak.ai;
+package com.github.nomad145.purepazaak.core.ai;
 
 import java.util.ArrayList;
 import java.util.Optional;
 
-import com.github.nomad145.purepazaak.Board;
-import com.github.nomad145.purepazaak.Match;
-import com.github.nomad145.purepazaak.entity.CardInterface;
-import com.github.nomad145.purepazaak.enumerable.PlayerEnum;
+import com.github.nomad145.purepazaak.core.Board;
+import com.github.nomad145.purepazaak.core.Match;
+import com.github.nomad145.purepazaak.core.entity.CardInterface;
+import com.github.nomad145.purepazaak.core.enumerable.PlayerEnum;
 
 public class SimpleAI {
   protected Match match;

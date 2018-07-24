@@ -1,4 +1,4 @@
-package com.github.nomad145.purepazaak;
+package com.github.nomad145.purepazaak.core;
 
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.SlickException;
