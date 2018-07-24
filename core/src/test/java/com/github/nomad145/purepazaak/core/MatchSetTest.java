@@ -1,11 +1,11 @@
-package com.github.nomad145.purepazaak;
+package com.github.nomad145.purepazaak.core;
 
-import com.github.nomad145.purepazaak.Board;
-import com.github.nomad145.purepazaak.MainDeck;
-import com.github.nomad145.purepazaak.entity.CardInterface;
-import com.github.nomad145.purepazaak.entity.MainCard;
-import com.github.nomad145.purepazaak.enumerable.PlayerEnum;
-import com.github.nomad145.purepazaak.enumerable.WinnerEnum;
+import com.github.nomad145.purepazaak.core.Board;
+import com.github.nomad145.purepazaak.core.MainDeck;
+import com.github.nomad145.purepazaak.core.entity.CardInterface;
+import com.github.nomad145.purepazaak.core.entity.MainCard;
+import com.github.nomad145.purepazaak.core.enumerable.PlayerEnum;
+import com.github.nomad145.purepazaak.core.enumerable.WinnerEnum;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;

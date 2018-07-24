@@ -1,10 +1,10 @@
-package com.github.nomad145.purepazaak;
+package com.github.nomad145.purepazaak.core;
 
-import com.github.nomad145.purepazaak.entity.MainCard;
-import com.github.nomad145.purepazaak.entity.CardInterface;
-import com.github.nomad145.purepazaak.entity.SideDeck;
-import com.github.nomad145.purepazaak.exception.CardNotFoundException;
-import com.github.nomad145.purepazaak.exception.SideDeckFullException;
+import com.github.nomad145.purepazaak.core.entity.MainCard;
+import com.github.nomad145.purepazaak.core.entity.CardInterface;
+import com.github.nomad145.purepazaak.core.entity.SideDeck;
+import com.github.nomad145.purepazaak.core.exception.CardNotFoundException;
+import com.github.nomad145.purepazaak.core.exception.SideDeckFullException;
 import java.util.ArrayList;
 import org.junit.Rule;
 import org.junit.Test;

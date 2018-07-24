@@ -1,7 +1,7 @@
-package com.github.nomad145.purepazaak;
+package com.github.nomad145.purepazaak.core.entity;
 
-import com.github.nomad145.purepazaak.entity.MainCard;
-import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.core.entity.MainCard;
+import com.github.nomad145.purepazaak.core.entity.CardInterface;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
