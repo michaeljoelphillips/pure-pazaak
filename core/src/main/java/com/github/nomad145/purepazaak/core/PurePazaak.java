@@ -1,4 +1,4 @@
-package com.github.nomad145.purepazaak.core.core;
+package com.github.nomad145.purepazaak.core;
 
 import playn.core.Image;
 import playn.core.Platform;
