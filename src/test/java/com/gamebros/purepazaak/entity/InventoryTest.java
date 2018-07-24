@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.entity;
+package com.github.nomad145.purepazaak.entity;
 
 import java.util.ArrayList;
 import org.junit.Test;
@@ -7,8 +7,8 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.entity.MainCard;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.entity.MainCard;
 
 public class InventoryTest {
   protected Inventory inventory;

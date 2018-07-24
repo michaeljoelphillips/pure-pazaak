@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.controller;
+package com.github.nomad145.purepazaak.controller;
 
 import java.awt.Container;
 import java.util.ArrayList;
@@ -6,14 +6,14 @@ import java.util.ArrayList;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 
-import com.gamebros.purepazaak.Match;
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.enumerable.PlayerEnum;
-import com.gamebros.purepazaak.event.CardClickedEvent;
-import com.gamebros.purepazaak.event.ContextualEventInterface;
-import com.gamebros.purepazaak.listener.ActionListenerInterface;
-import com.gamebros.purepazaak.view.DeckView;
-import com.gamebros.purepazaak.view.PlayerOneDeckView;
+import com.github.nomad145.purepazaak.Match;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.enumerable.PlayerEnum;
+import com.github.nomad145.purepazaak.event.CardClickedEvent;
+import com.github.nomad145.purepazaak.event.ContextualEventInterface;
+import com.github.nomad145.purepazaak.listener.ActionListenerInterface;
+import com.github.nomad145.purepazaak.view.DeckView;
+import com.github.nomad145.purepazaak.view.PlayerOneDeckView;
 
 public class SideDeckController extends AbstractController implements ActionListenerInterface {
   protected GameContainer container;

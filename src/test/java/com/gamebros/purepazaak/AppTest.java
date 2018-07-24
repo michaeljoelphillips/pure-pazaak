@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak;
+package com.github.nomad145.purepazaak;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

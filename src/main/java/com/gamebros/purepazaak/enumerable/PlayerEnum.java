@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.enumerable;
+package com.github.nomad145.purepazaak.enumerable;
 
 public enum PlayerEnum {
   PLAYERONE {

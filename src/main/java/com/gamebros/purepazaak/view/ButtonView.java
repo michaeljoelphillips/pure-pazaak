@@ -1,12 +1,12 @@
-package com.gamebros.purepazaak.view;
+package com.github.nomad145.purepazaak.view;
 
 import org.newdawn.slick.Color;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.ShapeFill;
 import org.newdawn.slick.geom.Rectangle;
 
-import com.gamebros.purepazaak.event.ButtonClickedEvent;
-import com.gamebros.purepazaak.view.AbstractView;
+import com.github.nomad145.purepazaak.event.ButtonClickedEvent;
+import com.github.nomad145.purepazaak.view.AbstractView;
 
 public class ButtonView extends AbstractView {
   protected static int WIDTH = 100;

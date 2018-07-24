@@ -1,7 +1,7 @@
-package com.gamebros.purepazaak.controller;
+package com.github.nomad145.purepazaak.controller;
 
-import com.gamebros.purepazaak.entity.Inventory;
-import com.gamebros.purepazaak.view.InventoryView;
+import com.github.nomad145.purepazaak.entity.Inventory;
+import com.github.nomad145.purepazaak.view.InventoryView;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.MouseListener;

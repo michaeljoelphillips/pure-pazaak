@@ -1,12 +1,12 @@
-package com.gamebros.purepazaak.controller;
+package com.github.nomad145.purepazaak.controller;
 
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 
-import com.gamebros.purepazaak.Match;
-import com.gamebros.purepazaak.event.ContextualEventInterface;
-import com.gamebros.purepazaak.listener.ActionListenerInterface;
-import com.gamebros.purepazaak.view.ButtonView;
+import com.github.nomad145.purepazaak.Match;
+import com.github.nomad145.purepazaak.event.ContextualEventInterface;
+import com.github.nomad145.purepazaak.listener.ActionListenerInterface;
+import com.github.nomad145.purepazaak.view.ButtonView;
 
 public class UIController
 {

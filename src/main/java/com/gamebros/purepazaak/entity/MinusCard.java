@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.entity;
+package com.github.nomad145.purepazaak.entity;
 
 public class MinusCard implements CardInterface {
   protected int value;

@@ -1,22 +1,22 @@
-package com.gamebros.purepazaak.view;
+package com.github.nomad145.purepazaak.view;
 
 import java.util.ArrayList;
 
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 
-import com.gamebros.purepazaak.Match;
-import com.gamebros.purepazaak.MatchSet;
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.enumerable.PlayerEnum;
-import com.gamebros.purepazaak.ui.CardGrid;
+import com.github.nomad145.purepazaak.Match;
+import com.github.nomad145.purepazaak.MatchSet;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.enumerable.PlayerEnum;
+import com.github.nomad145.purepazaak.ui.CardGrid;
 
 public class MatchSetView {
   protected MatchSet matchSet;
 
   protected CardGrid playerOneBoard = new CardGrid(
-      190,
-      235,
+      140,
+      160,
       580,
       570
   );

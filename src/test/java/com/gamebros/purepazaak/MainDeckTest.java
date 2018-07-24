@@ -1,7 +1,7 @@
-// package com.gamebros.purepazaak;
+// package com.github.nomad145.purepazaak;
 
-// import com.gamebros.purepazaak.entity.CardInterface;
-// import com.gamebros.purepazaak.MainDeck;
+// import com.github.nomad145.purepazaak.entity.CardInterface;
+// import com.github.nomad145.purepazaak.MainDeck;
 // import org.junit.Rule;
 // import org.junit.Test;
 // import org.junit.rules.ExpectedException;

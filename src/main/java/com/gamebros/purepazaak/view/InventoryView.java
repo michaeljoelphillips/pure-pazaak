@@ -1,7 +1,7 @@
-package com.gamebros.purepazaak.view;
+package com.github.nomad145.purepazaak.view;
 
-import com.gamebros.purepazaak.entity.Inventory;
-import com.gamebros.purepazaak.ui.CardGrid;
+import com.github.nomad145.purepazaak.entity.Inventory;
+import com.github.nomad145.purepazaak.ui.CardGrid;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 

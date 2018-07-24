@@ -1,16 +1,16 @@
-package com.gamebros.purepazaak;
+package com.github.nomad145.purepazaak;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.entity.Player;
-import com.gamebros.purepazaak.entity.SideDeck;
-import com.gamebros.purepazaak.enumerable.PlayerEnum;
-import com.gamebros.purepazaak.enumerable.WinnerEnum;
-import com.gamebros.purepazaak.factory.SideDeckFactory;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.entity.Player;
+import com.github.nomad145.purepazaak.entity.SideDeck;
+import com.github.nomad145.purepazaak.enumerable.PlayerEnum;
+import com.github.nomad145.purepazaak.enumerable.WinnerEnum;
+import com.github.nomad145.purepazaak.factory.SideDeckFactory;
 
 public class MainCli {
   public static void main(String[] args) {

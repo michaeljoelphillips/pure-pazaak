@@ -1,6 +1,6 @@
-package com.gamebros.purepazaak.view;
+package com.github.nomad145.purepazaak.view;
 
-import com.gamebros.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.entity.CardInterface;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;

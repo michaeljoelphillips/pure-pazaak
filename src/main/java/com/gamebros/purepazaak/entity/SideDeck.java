@@ -1,7 +1,7 @@
-package com.gamebros.purepazaak.entity;
+package com.github.nomad145.purepazaak.entity;
 
-import com.gamebros.purepazaak.exception.CardNotFoundException;
-import com.gamebros.purepazaak.exception.SideDeckFullException;
+import com.github.nomad145.purepazaak.exception.CardNotFoundException;
+import com.github.nomad145.purepazaak.exception.SideDeckFullException;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 

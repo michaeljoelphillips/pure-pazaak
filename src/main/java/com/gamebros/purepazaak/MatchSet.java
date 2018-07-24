@@ -1,12 +1,12 @@
-package com.gamebros.purepazaak;
+package com.github.nomad145.purepazaak;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.entity.Player;
-import com.gamebros.purepazaak.enumerable.PlayerEnum;
-import com.gamebros.purepazaak.enumerable.WinnerEnum;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.entity.Player;
+import com.github.nomad145.purepazaak.enumerable.PlayerEnum;
+import com.github.nomad145.purepazaak.enumerable.WinnerEnum;
 
 public class MatchSet {
   protected Board playerOneBoard = new Board();

@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.ui.component;
+package com.github.nomad145.purepazaak.ui.component;
 
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;

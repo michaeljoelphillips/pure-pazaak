@@ -1,8 +1,8 @@
-package com.gamebros.purepazaak;
+package com.github.nomad145.purepazaak;
 
 import java.util.ArrayList;
 
-import com.gamebros.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.entity.CardInterface;
 
 public class Board {
   protected ArrayList<CardInterface> cards = new ArrayList<CardInterface>();

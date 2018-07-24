@@ -1,6 +1,6 @@
-package com.gamebros.purepazaak.listener;
+package com.github.nomad145.purepazaak.listener;
 
-import com.gamebros.purepazaak.event.ContextualEventInterface;
+import com.github.nomad145.purepazaak.event.ContextualEventInterface;
 
 // @TODO: A subscriber based relationship might work really well here.
 public interface ActionListenerInterface {

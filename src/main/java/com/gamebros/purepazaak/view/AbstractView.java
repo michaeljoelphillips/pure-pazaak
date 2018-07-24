@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.view;
+package com.github.nomad145.purepazaak.view;
 
 import java.util.LinkedList;
 
@@ -6,10 +6,10 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Input;
 import org.newdawn.slick.MouseListener;
 
-import com.gamebros.purepazaak.event.CardClickedEvent;
-import com.gamebros.purepazaak.event.ContextualEventInterface;
-import com.gamebros.purepazaak.listener.ActionListenerInterface;
-import com.gamebros.purepazaak.view.ClickableViewInterface;
+import com.github.nomad145.purepazaak.event.CardClickedEvent;
+import com.github.nomad145.purepazaak.event.ContextualEventInterface;
+import com.github.nomad145.purepazaak.listener.ActionListenerInterface;
+import com.github.nomad145.purepazaak.view.ClickableViewInterface;
 
 public abstract class AbstractView implements MouseListener, ClickableViewInterface {
   protected boolean acceptsInput = false;

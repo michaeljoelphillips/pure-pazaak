@@ -1,9 +1,9 @@
-package com.gamebros.purepazaak.view;
+package com.github.nomad145.purepazaak.view;
 
 import java.util.ArrayList;
 
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.ui.CardGrid;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.ui.CardGrid;
 
 public class PlayerTwoDeckView extends DeckView {
   private final int x = 1160;

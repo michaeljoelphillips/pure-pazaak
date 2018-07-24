@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.view;
+package com.github.nomad145.purepazaak.view;
 
 import org.newdawn.slick.Graphics;
 

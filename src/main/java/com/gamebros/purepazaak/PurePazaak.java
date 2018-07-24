@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak;
+package com.github.nomad145.purepazaak;
 
 import java.util.ArrayList;
 
@@ -9,18 +9,18 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
-import com.gamebros.purepazaak.ai.SimpleAI;
-import com.gamebros.purepazaak.controller.SideDeckController;
-import com.gamebros.purepazaak.controller.InventoryController;
-import com.gamebros.purepazaak.controller.MatchController;
-import com.gamebros.purepazaak.controller.UIController;
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.entity.Inventory;
-import com.gamebros.purepazaak.entity.Player;
-import com.gamebros.purepazaak.entity.SideDeck;
-import com.gamebros.purepazaak.enumerable.PlayerEnum;
-import com.gamebros.purepazaak.factory.SideDeckFactory;
-import com.gamebros.purepazaak.view.InventoryView;
+import com.github.nomad145.purepazaak.ai.SimpleAI;
+import com.github.nomad145.purepazaak.controller.SideDeckController;
+import com.github.nomad145.purepazaak.controller.InventoryController;
+import com.github.nomad145.purepazaak.controller.MatchController;
+import com.github.nomad145.purepazaak.controller.UIController;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.entity.Inventory;
+import com.github.nomad145.purepazaak.entity.Player;
+import com.github.nomad145.purepazaak.entity.SideDeck;
+import com.github.nomad145.purepazaak.enumerable.PlayerEnum;
+import com.github.nomad145.purepazaak.factory.SideDeckFactory;
+import com.github.nomad145.purepazaak.view.InventoryView;
 
 public class PurePazaak implements Game {
   protected MatchController matchController;

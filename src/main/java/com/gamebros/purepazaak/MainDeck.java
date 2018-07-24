@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak;
+package com.github.nomad145.purepazaak;
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -6,8 +6,8 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
 
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.entity.MainCard;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.entity.MainCard;
 
 public class MainDeck {
   protected LinkedList<CardInterface> cards;

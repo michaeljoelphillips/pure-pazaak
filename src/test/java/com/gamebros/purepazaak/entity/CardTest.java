@@ -1,7 +1,7 @@
-package com.gamebros.purepazaak;
+package com.github.nomad145.purepazaak;
 
-import com.gamebros.purepazaak.entity.MainCard;
-import com.gamebros.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.entity.MainCard;
+import com.github.nomad145.purepazaak.entity.CardInterface;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;

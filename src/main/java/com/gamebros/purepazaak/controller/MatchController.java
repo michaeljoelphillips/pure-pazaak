@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.controller;
+package com.github.nomad145.purepazaak.controller;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -6,14 +6,14 @@ import java.util.Optional;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 
-import com.gamebros.purepazaak.Match;
-import com.gamebros.purepazaak.MatchSet;
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.enumerable.PlayerEnum;
-import com.gamebros.purepazaak.enumerable.WinnerEnum;
-import com.gamebros.purepazaak.view.DeckView;
-import com.gamebros.purepazaak.view.MatchSetView;
-import com.gamebros.purepazaak.view.PlayerTwoDeckView;
+import com.github.nomad145.purepazaak.Match;
+import com.github.nomad145.purepazaak.MatchSet;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.enumerable.PlayerEnum;
+import com.github.nomad145.purepazaak.enumerable.WinnerEnum;
+import com.github.nomad145.purepazaak.view.DeckView;
+import com.github.nomad145.purepazaak.view.MatchSetView;
+import com.github.nomad145.purepazaak.view.PlayerTwoDeckView;
 
 public class MatchController {
   protected Match match;

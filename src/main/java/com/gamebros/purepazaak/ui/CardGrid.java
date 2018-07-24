@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.ui;
+package com.github.nomad145.purepazaak.ui;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.view.CardView;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.view.CardView;
 
 public class CardGrid {
   private static int horizontalSpace = 10;

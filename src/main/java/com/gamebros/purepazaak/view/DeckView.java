@@ -1,4 +1,4 @@
-package com.gamebros.purepazaak.view;
+package com.github.nomad145.purepazaak.view;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -6,11 +6,11 @@ import java.util.Optional;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 
-import com.gamebros.purepazaak.Board;
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.event.CardClickedEvent;
-import com.gamebros.purepazaak.ui.CardGrid;
-import com.gamebros.purepazaak.view.AbstractView;
+import com.github.nomad145.purepazaak.Board;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.event.CardClickedEvent;
+import com.github.nomad145.purepazaak.ui.CardGrid;
+import com.github.nomad145.purepazaak.view.AbstractView;
 
 abstract public class DeckView extends AbstractView {
   protected ArrayList<CardInterface> deck;

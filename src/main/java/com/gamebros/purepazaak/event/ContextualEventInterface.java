@@ -1,8 +1,8 @@
-package com.gamebros.purepazaak.event;
+package com.github.nomad145.purepazaak.event;
 
 import java.util.Optional;
 
-import com.gamebros.purepazaak.event.EventInterface;
+import com.github.nomad145.purepazaak.event.EventInterface;
 
 public interface ContextualEventInterface extends EventInterface {
   public Optional<Object> get();

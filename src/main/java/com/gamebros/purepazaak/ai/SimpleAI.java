@@ -1,12 +1,12 @@
-package com.gamebros.purepazaak.ai;
+package com.github.nomad145.purepazaak.ai;
 
 import java.util.ArrayList;
 import java.util.Optional;
 
-import com.gamebros.purepazaak.Board;
-import com.gamebros.purepazaak.Match;
-import com.gamebros.purepazaak.entity.CardInterface;
-import com.gamebros.purepazaak.enumerable.PlayerEnum;
+import com.github.nomad145.purepazaak.Board;
+import com.github.nomad145.purepazaak.Match;
+import com.github.nomad145.purepazaak.entity.CardInterface;
+import com.github.nomad145.purepazaak.enumerable.PlayerEnum;
 
 public class SimpleAI {
   protected Match match;
@@ -31,8 +31,7 @@ public class SimpleAI {
     }
 
     if (this.hasPlayerStood()) {
-      if (currentValue > opponentValue
-          && currentValue <= 20) {
+      if (currentValue > opponentValue && currentValue <= 20) {
         this.stand();
 
         return;
