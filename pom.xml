@@ -15,6 +15,8 @@
 
   <properties>
     <playn.version>2.0</playn.version>
+    <source.level>1.8</source.level>
+    <target.level>1.8</target.level>
   </properties>
 
   <profiles>
