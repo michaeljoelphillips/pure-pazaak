@@ -14,7 +14,7 @@
   <name>PurePazaak Java</name>
 
   <properties>
-    <mainClass>com.github.nomad145.purepazaak.kotlin.PurePazaakJavaKt</mainClass>
+    <mainClass>com.github.nomad145.purepazaak.PurePazaakKt</mainClass>
   </properties>
 
   <dependencies>
