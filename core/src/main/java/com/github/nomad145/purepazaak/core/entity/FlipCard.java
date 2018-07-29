@@ -1,5 +1,7 @@
 package com.github.nomad145.purepazaak.core.entity;
 
+import com.github.nomad145.purepazaak.core.card.CardInterface;
+
 public class FlipCard implements CardInterface {
   protected int value;
 
