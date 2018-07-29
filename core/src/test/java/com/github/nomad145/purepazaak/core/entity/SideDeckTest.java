@@ -1,7 +1,7 @@
 package com.github.nomad145.purepazaak.core;
 
-import com.github.nomad145.purepazaak.core.entity.MainCard;
-import com.github.nomad145.purepazaak.core.entity.CardInterface;
+import com.github.nomad145.purepazaak.core.card.MainCard;
+import com.github.nomad145.purepazaak.core.card.CardInterface;
 import com.github.nomad145.purepazaak.core.entity.SideDeck;
 import com.github.nomad145.purepazaak.core.exception.CardNotFoundException;
 import com.github.nomad145.purepazaak.core.exception.SideDeckFullException;

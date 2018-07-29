@@ -2,8 +2,8 @@ package com.github.nomad145.purepazaak.core;
 
 import com.github.nomad145.purepazaak.core.Board;
 import com.github.nomad145.purepazaak.core.MainDeck;
-import com.github.nomad145.purepazaak.core.entity.CardInterface;
-import com.github.nomad145.purepazaak.core.entity.MainCard;
+import com.github.nomad145.purepazaak.core.card.CardInterface;
+import com.github.nomad145.purepazaak.core.card.MainCard;
 import com.github.nomad145.purepazaak.core.enumerable.PlayerEnum;
 import com.github.nomad145.purepazaak.core.enumerable.WinnerEnum;
 import org.junit.Before;

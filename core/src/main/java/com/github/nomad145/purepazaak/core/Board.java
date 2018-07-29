@@ -2,7 +2,7 @@ package com.github.nomad145.purepazaak.core;
 
 import java.util.ArrayList;
 
-import com.github.nomad145.purepazaak.core.entity.CardInterface;
+import com.github.nomad145.purepazaak.core.card.CardInterface;
 
 public class Board {
   protected ArrayList<CardInterface> cards = new ArrayList<CardInterface>();

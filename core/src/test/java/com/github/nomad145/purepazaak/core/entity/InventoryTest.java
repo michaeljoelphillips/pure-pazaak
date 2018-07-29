@@ -7,8 +7,8 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
-import com.github.nomad145.purepazaak.core.entity.CardInterface;
-import com.github.nomad145.purepazaak.core.entity.MainCard;
+import com.github.nomad145.purepazaak.core.card.CardInterface;
+import com.github.nomad145.purepazaak.core.card.MainCard;
 
 public class InventoryTest {
   protected Inventory inventory;

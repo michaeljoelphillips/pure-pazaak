@@ -5,7 +5,7 @@ import java.util.Optional;
 
 import com.github.nomad145.purepazaak.core.Board;
 import com.github.nomad145.purepazaak.core.Match;
-import com.github.nomad145.purepazaak.core.entity.CardInterface;
+import com.github.nomad145.purepazaak.core.card.CardInterface;
 import com.github.nomad145.purepazaak.core.enumerable.PlayerEnum;
 
 public class SimpleAI {

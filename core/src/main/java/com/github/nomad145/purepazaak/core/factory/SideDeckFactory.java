@@ -1,15 +1,15 @@
 package com.github.nomad145.purepazaak.core.factory;
 
+import com.github.nomad145.purepazaak.core.card.CardInterface;
+import com.github.nomad145.purepazaak.core.card.MainCard;
+import com.github.nomad145.purepazaak.core.card.FlipCard;
+import com.github.nomad145.purepazaak.core.entity.MinusCard;
+import com.github.nomad145.purepazaak.core.entity.PlusCard;
+import com.github.nomad145.purepazaak.core.entity.SideDeck;
+
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.Random;
-
-import com.github.nomad145.purepazaak.core.entity.FlipCard;
-import com.github.nomad145.purepazaak.core.entity.MinusCard;
-import com.github.nomad145.purepazaak.core.entity.PlusCard;
-import com.github.nomad145.purepazaak.core.entity.MainCard;
-import com.github.nomad145.purepazaak.core.entity.CardInterface;
-import com.github.nomad145.purepazaak.core.entity.SideDeck;
 
 public class SideDeckFactory {
   public SideDeck build() {

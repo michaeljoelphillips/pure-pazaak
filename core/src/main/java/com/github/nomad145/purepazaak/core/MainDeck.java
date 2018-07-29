@@ -6,8 +6,8 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
 
-import com.github.nomad145.purepazaak.core.entity.CardInterface;
-import com.github.nomad145.purepazaak.core.entity.MainCard;
+import com.github.nomad145.purepazaak.core.card.CardInterface;
+import com.github.nomad145.purepazaak.core.card.MainCard;
 
 public class MainDeck {
   protected LinkedList<CardInterface> cards;

@@ -1,5 +1,6 @@
 package com.github.nomad145.purepazaak.core.entity;
 
+import com.github.nomad145.purepazaak.core.card.CardInterface;
 import java.util.ArrayList;
 
 public class Inventory {

@@ -3,7 +3,7 @@ package com.github.nomad145.purepazaak.core;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import com.github.nomad145.purepazaak.core.entity.CardInterface;
+import com.github.nomad145.purepazaak.core.card.CardInterface;
 import com.github.nomad145.purepazaak.core.entity.Player;
 import com.github.nomad145.purepazaak.core.enumerable.PlayerEnum;
 import com.github.nomad145.purepazaak.core.enumerable.WinnerEnum;
