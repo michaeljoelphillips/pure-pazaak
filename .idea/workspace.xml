@@ -2,7 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58d1ccdd-5ed0-4b5c-b2b3-6ed787ef8c03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/factory/SideDeckFactory.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/factory/SideDeckFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/Board.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/MainCli.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/MainDeck.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/Match$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/Match.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/MatchSet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/PurePazaak.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/ai/SimpleAI.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/card/CardInterface.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/card/FlipCard.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/card/MainCard.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/card/MinusCard.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/card/PlusCard.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/entity/Inventory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/entity/Player.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/entity/SideDeck.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/enumerable/PlayerEnum$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/enumerable/PlayerEnum$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/enumerable/PlayerEnum.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/enumerable/WinnerEnum.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/event/ButtonClickedEvent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/event/CardClickedEvent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/event/ContextualEventInterface.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/event/EventInterface.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/exception/CardNotFoundException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/exception/SideDeckFullException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/factory/SideDeckFactory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/classes/com/github/nomad145/purepazaak/core/listener/ActionListenerInterface.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/pure-pazaak-core-0.2.0-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/test-classes/com/github/nomad145/purepazaak/core/MatchSetTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/test-classes/com/github/nomad145/purepazaak/core/SideDeckTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/test-classes/com/github/nomad145/purepazaak/core/card/FlipCardTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/test-classes/com/github/nomad145/purepazaak/core/card/MainCardTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/test-classes/com/github/nomad145/purepazaak/core/card/MinusCardTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/test-classes/com/github/nomad145/purepazaak/core/card/PlusCardTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/test-classes/com/github/nomad145/purepazaak/core/entity/CardTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/test-classes/com/github/nomad145/purepazaak/core/entity/InventoryTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/test-classes/com/github/nomad145/purepazaak/core/entity/Player.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/java-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/compile/java-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/testCompile/java-test-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/maven-status/maven-compiler-plugin/testCompile/java-test-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-com.github.nomad145.purepazaak.core.MatchSetTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-com.github.nomad145.purepazaak.core.SideDeckTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-com.github.nomad145.purepazaak.core.card.FlipCardTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-com.github.nomad145.purepazaak.core.card.MainCardTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-com.github.nomad145.purepazaak.core.card.MinusCardTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-com.github.nomad145.purepazaak.core.card.PlusCardTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-com.github.nomad145.purepazaak.core.entity.CardTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/TEST-com.github.nomad145.purepazaak.core.entity.InventoryTest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/com.github.nomad145.purepazaak.core.MatchSetTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/com.github.nomad145.purepazaak.core.SideDeckTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/com.github.nomad145.purepazaak.core.card.FlipCardTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/com.github.nomad145.purepazaak.core.card.MainCardTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/com.github.nomad145.purepazaak.core.card.MinusCardTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/com.github.nomad145.purepazaak.core.card.PlusCardTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/com.github.nomad145.purepazaak.core.entity.CardTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/target/surefire-reports/com.github.nomad145.purepazaak.core.entity.InventoryTest.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/java/target/" />
@@ -77,10 +136,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-14" />
-    <option name="width" value="1948" />
-    <option name="height" value="2174" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-376" />
+    <option name="y" value="193" />
+    <option name="width" value="2800" />
+    <option name="height" value="1920" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -351,16 +411,15 @@
       <option name="presentableId" value="Default" />
       <updated>1533858364735</updated>
       <workItem from="1533858370418" duration="1532000" />
-      <workItem from="1533860331464" duration="192000" />
+      <workItem from="1533860331464" duration="677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1724000" />
+    <option name="totallyTimeSpent" value="2209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="0" width="1948" height="2174" extended-state="1" />
-    <editor active="true" />
+    <frame x="-376" y="193" width="2800" height="1920" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
