@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4883061b-f72b-4db5-889f-6cddb2f95a87" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/proguard.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/android/proguard.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/github/nomad145/purepazaak/android/PurePazaakActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/github/nomad145/purepazaak/android/PurePazaakActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/src/main/resources/PurePazaakAssets.gwt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/assets/src/main/resources/PurePazaakAssets.gwt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/MainCli.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/MainCli.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/MainDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/MainDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/MatchSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/MatchSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/ai/SimpleAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/ai/SimpleAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/entity/FlipCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/entity/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/entity/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/entity/MinusCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/entity/SideDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/entity/SideDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/enumerable/PlayerEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/enumerable/PlayerEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/enumerable/WinnerEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/enumerable/WinnerEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/event/ButtonClickedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/event/ButtonClickedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/event/CardClickedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/event/CardClickedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/event/ContextualEventInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/event/ContextualEventInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/event/EventInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/event/EventInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/exception/CardNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/exception/CardNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/exception/SideDeckFullException.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/exception/SideDeckFullException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/factory/SideDeckFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/factory/SideDeckFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/listener/ActionListenerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/listener/ActionListenerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/PurePazaak.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/PurePazaak.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/CardInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/CardInterface.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/MainCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/MainCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/PlusCard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/PlusCard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/MatchSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/MatchSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/entity/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/entity/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/entity/InventoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/entity/InventoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/entity/SideDeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/github/nomad145/purepazaak/core/entity/SideDeckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/MainCardTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/MainCardTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/PlusCardTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/PlusCardTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/html/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src/main/java/com/github/nomad145/purepazaak/PurePazaak.gwt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/html/src/main/java/com/github/nomad145/purepazaak/PurePazaak.gwt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src/main/java/com/github/nomad145/purepazaak/html/PurePazaakHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/html/src/main/java/com/github/nomad145/purepazaak/html/PurePazaakHtml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src/main/webapp/WEB-INF/appengine-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/html/src/main/webapp/WEB-INF/appengine-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src/main/webapp/WEB-INF/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/html/src/main/webapp/WEB-INF/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/html/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/main/java/com/github/nomad145/purepazaak/PurePazaak.kt" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/main/java/com/github/nomad145/purepazaak/PurePazaak.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robovm/Info.plist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/robovm/Info.plist.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robovm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/robovm/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robovm/resources/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/robovm/resources/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robovm/resources/Images.xcassets/LaunchImage.launchimage/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/robovm/resources/Images.xcassets/LaunchImage.launchimage/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robovm/robovm.properties" beforeDir="false" afterPath="$PROJECT_DIR$/robovm/robovm.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robovm/robovm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/robovm/robovm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robovm/src/main/java/com/github/nomad145/purepazaak/robovm/PurePazaakRoboVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/robovm/src/main/java/com/github/nomad145/purepazaak/robovm/PurePazaakRoboVM.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/assets/target/" />
+    <ignored path="$PROJECT_DIR$/core/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1764506527">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+          <entry key="kt" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="Kotlin" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="38" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/MinusCard.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/MainCard.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/FlipCard.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/PlusCardTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/MinusCardTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="e#50#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/factory/SideDeckFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/MainCardTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/factory/SideDeckFactory.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="4046" />
+    <option name="y" value="112" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pure-pazaak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pure-pazaak" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pure-pazaak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pure-pazaak" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pure-pazaak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pure-pazaak" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pure-pazaak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pure-pazaak" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pure-pazaak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pure-pazaak" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pure-pazaak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pure-pazaak" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pure-pazaak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pure-pazaak" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="card" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533903607253" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MinusCardTest.testValueGetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pure-pazaak-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.nomad145.purepazaak.core.card.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.nomad145.purepazaak.core.card" />
+      <option name="MAIN_CLASS_NAME" value="com.github.nomad145.purepazaak.core.card.MinusCardTest" />
+      <option name="METHOD_NAME" value="testValueGetter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MinusCardTest.testValueGetter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4883061b-f72b-4db5-889f-6cddb2f95a87" name="Default Changelist" comment="" />
+      <created>1533903296464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533903296464</updated>
+      <workItem from="1533903299445" duration="493000" />
+      <workItem from="1533909010761" duration="25000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="518000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4046" y="112" width="1400" height="1000" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25445104" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.3298122" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/MinusCard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/MainCard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/kotlin/com/github/nomad145/purepazaak/core/card/FlipCard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/PlusCardTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/MinusCardTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#50#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/github/nomad145/purepazaak/core/factory/SideDeckFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/kotlin/com/github/nomad145/purepazaak/core/card/MainCardTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
