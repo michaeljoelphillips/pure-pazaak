@@ -1,3 +1,4 @@
 *.class
-/home/ryan/pure-pazaak/pure-pazaak/.idea/
-/.directory.txt
+.idea/
+/.directory
+core/target/
