@@ -1,5 +1,5 @@
-.idea/
+.idea
 /.directory
 *.class
-/core/target/
+/core/target
 *.iml
